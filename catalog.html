@@ -66,13 +66,15 @@
         </ul>
       </div>
 
-      <div class="">
-        <!--ФИЛЬТР-->
-        <section>
+      <form action="https://echo.htmlacademy.ru" method="GET" name="range">
+
+        <div class="">
+          <!--ФИЛЬТР-->
+          <section>
           <h3>Фильтр:</h3>
           <p>Цена:</p>
           
-          <!--ЗДЕСЬ БУДЕТ ФОРМА. Нашел пример, но, по-моему, тут 
+          <!--Нашел пример, но, по-моему, тут 
           нужен JSQuery https://jqueryui.com/slider/#range-->
 
           <div class="fullbar">
@@ -81,80 +83,81 @@
               <button name="maxcost"></button>
             </div>
           </div>
-          <form action="https://echo.htmlacademy.ru" method="GET" name="range">
+          
           <p>
             <input type="number" name="minnumber" min="0">
             <input type="number" name="maxnumber" max="50000">    
           </p>
-          </form>
-        </section>
+          
+          </section>
 
-        <!--СОРТИРОВКА-->
+          <!--СОРТИРОВКА-->
         
-        <section>
+          <section>
           <h3>Сортировка:</h3>
             <p><a href="#">По цене</a></p>
             <p><a href="#">По типу</a></p>
             <p><a href="#">По функционалу</a></p>
             <p><a href="#">Вверх</a></p>
             <p><a href="#">Вниз</a></p>
-        </section>
+          </section>
 
-        <!--ПРОИЗВОДИТЕЛИ-->
+          <!--ПРОИЗВОДИТЕЛИ-->
         
-        <section>
+          <section>
           <!--ЗДЕСЬ БУДЕТ ФОРМА-->
           <fieldset>
             <legend>Производители:</legend>
-            <form action="https://echo.htmlacademy.ru" method="GET" name="producer">
-              <ul>
-                  <li>
-                      <input type="checkbox" name="bosch" id="filter-bosch">
-                      <label for="filter-bosch">Bosch</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="interskol" id="filter-interskol">
-                      <label for="filter-interskol">Интерскол</label>  
-                    </li>
-                    <li>
-                      <input type="checkbox" name="makita" id="filter-makita">
-                      <label for="filter-makita">Makita</label>  
-                    </li>
-                    <li>
-                      <input type="checkbox" name="dewalt" id="filter-dewalt">
-                      <label for="filter-dewalt">Dewalt</label>  
-                    </li>
-                    <li>
-                      <input type="checkbox" name="hitachi" id="filter-hitachi">
-                      <label for="filter-hitachi">Hitachi</label>  
-                    </li>
-              </ul>
-            </form>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch">
+                <label for="filter-bosch">Bosch</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interskol" id="filter-interskol">
+                <label for="filter-interskol">Интерскол</label>  
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita">
+                <label for="filter-makita">Makita</label>  
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>  
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>  
+              </li>
+            </ul>
           </fieldset>
-        </section>
+          </section>
 
-        <!--ПИТАНИЕ-->
-        <section>
+          <!--ПИТАНИЕ-->
+          <section>
           <fieldset>
             <legend>Питание:</legend>
           
             <!--ЗДЕСЬ БУДЕТ ФОРМА-->
-            <form action="https://echo.htmlacademy.ru" method="GET" name="power">
-              <ul>
-                <li>
-                  <input type="radio" name="power-group" value="battery" id="filter-battery">
-                  <label for="filter-battery">Аккумуляторные</label>
-                </li>
-                <li>
-                  <input type="radio" name="power-group" value="electro" id="filter-electro">
-                  <label for="filter-electro">Сетевые</label>
-                </li>
-              </ul>
-            </form>
+
+            <ul>
+              <li>
+                <input type="radio" name="power-group" value="battery" id="filter-battery">
+                <label for="filter-battery">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power-group" value="electro" id="filter-electro">
+                <label for="filter-electro">Сетевые</label>
+              </li>
+            </ul>
+            
+            
           </fieldset>
-        </section>
-        <a href="#">Показать</a>
-      </div>
+          </section>
+          <button type="submit">Показать</button>
+        </div>
+      </form>
+
 
     <!--ТОВАРЫ -->
   
