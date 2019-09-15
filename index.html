@@ -6,13 +6,21 @@
   </head>
   <body>
     <header>
-      <h1>«Техномарт» интернет-магазин строительных материалов
+      <h1 class="visually-hidden">«Техномарт» интернет-магазин строительных материалов
           и инструментов для ремонта</h1>
+
+        <!--Верхнее меню с поиском-->
+
       <div class="">
         <ul>
           <li><a><img src="img/svg-technomart/logo-technomart.svg" width="107" height="18"
             alt="Техномарт" style="background: #ee3643;"></a></li>
-          <!--ЗДЕСЬ БУДЕТ ФОРМА ПОИСКА-->
+
+          <!--ФОРМА ПОИСКА-->
+
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <input type="search" placeholder="Поиск:">
+          </form>
           <li><a href="#">Закладки: 0</a></li>
           <li><a href="#">Корзина: 0</a></li>
           <li><a href="#">Оформить заказ</a> </li>
@@ -30,6 +38,9 @@
               <li><a href="#">Регистрация</a></li>
             </ul>
       </section>
+
+      <!--Навигация-->
+
       <nav>
         <ul>
           <li><a>Главная</a></li>
@@ -42,10 +53,13 @@
         </ul>
       </nav>
     </header>
+
     <main>
+
       <!--ПРОМО-БЛОК: КАТЕГОРИИ ТОВАРОВ-->
+      
       <section>
-        <h2>Категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul>
           <li>
             <h3>Материалы</h3>
@@ -83,75 +97,78 @@
           </li>
         </ul>
       </section>
+
       <!--ПОПУЛЯРНЫЕ ТОВАРЫ-->
+
       <section>
         <h2>Популярные товары</h2>
         <a href="#">Все популярные товары</a>
-        <!--КАРТОЧКА ТОВАРА 1-->
         <ul>
-          <a href="catalog.html">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
-          </a>
-          <p>
-            <a href="#">
-              <img src="img/pop-product-1.jpg"
-               width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
+
+          <!--КАРТОЧКА ТОВАРА 1-->
+          <li>
+            <a href="catalog.html">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <p>
+                <img src="img/pop-product-1.jpg"
+                width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
+              </p>
+              <p>
+                <span>32500 Р.</span>
+                <span>25500 Р.</span>
+              </p>
             </a>
-          </p>
-          <p>
-            <span>32500 Р.</span>
-            <span>25500 Р.</span>
-          </p>
-        </ul>
-        <!--КАРТОЧКА ТОВАРА 2-->
-        <ul>
-          <a href="catalog.html">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
-          </a>
-          <p>
-            <a href="#">
-              <img src="img/pop-product-2.jpg"
-               width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
+          </li>
+
+          <!--КАРТОЧКА ТОВАРА 2-->
+          <li>
+            <a href="catalog.html">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <p>
+                <img src="img/pop-product-2.jpg"
+                width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
+              </p>
+              <p>
+                <span>22500 Р.</span>
+                <span>15500 Р.</span>
+              </p>
+            </a>  
+          </li>
+
+          <!--КАРТОЧКА ТОВАРА 3-->
+        
+          <li>
+            <a href="catalog.html">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <p>
+                <img src="img/pop-product-3.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
+              </p>
+              <p>
+                <span>30500 Р.</span>
+                <span>25500 Р.</span>
+              </p>
             </a>
-          </p>
-          <p>
-            <span>22500 Р.</span>
-            <span>15500 Р.</span>
-          </p>
-        </ul>
-        <!--КАРТОЧКА ТОВАРА 3-->
-        <ul>
-          <a href="catalog.html">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-          </a>
-          <p>
-            <a href="#">
-              <img src="img/pop-product-3.jpg"
-               width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
+          </li>
+         
+          <!--КАРТОЧКА ТОВАРА 4-->
+          
+          <li>
+            <a href="catalog.html">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <p>
+                <img src="img/pop-product-4.jpg"
+                width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
+              </p>
+              <p>
+                <span>12500 Р.</span>
+              </p>
             </a>
-          </p>
-          <p>
-            <span>30500 Р.</span>
-            <span>25500 Р.</span>
-          </p>
-        </ul>
-        <!--КАРТОЧКА ТОВАРА 4-->
-        <ul>
-          <a href="catalog.html">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-          </a>
-          <p>
-            <a href="#">
-              <img src="img/pop-product-4.jpg"
-               width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
-            </a>
-          </p>
-          <p>
-            <span>12500 Р.</span>
-          </p>
-        </ul>
+          </li>
+        </ul>    
       </section>
+
       <!--ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ-->
+
       <section>
         <h2>Популярные производители</h2>
         <a href="#">Все производители</a>
@@ -197,7 +214,9 @@
           </li>
         </ul>
       </section>
+
       <!--СЕРВИСЫ-->
+
       <section>
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
@@ -227,6 +246,8 @@
           </ul>
       </section>
 
+      <!--Компания "Техномарт"-->
+
       <section>
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
@@ -250,6 +271,9 @@
             <a href="#">Заблудились? Напишите нам!</a>
       </section>
     </main>
+
+    <!--ФУТТЕР-->
+
     <footer>
         <section>
           <p><a><img src="img/svg-technomart/logo-technomart.svg" width="136" height="21"
@@ -288,12 +312,40 @@
           </p>
         </div>
     </footer>
-    <!--МОДАЛЬНОЕ ОКНО "НАПИШИТЕ НАМ"-->
+
+     <!--МОДАЛЬНОЕ ОКНО "КАРТА"-->
     <section>
-      <h2>Написать нам</h2>
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <p>
+        <img src="img/map_full.png" alt="Офис компании «Техномарт» 
+        находится по адресу ул.Б.Конюшенная, д.19-8, город Санкт-Петербург">
+      </p>
+    </section>
+
+
+    <!--МОДАЛЬНОЕ ОКНО "НАПИШИТЕ НАМ"-->
+
+    <section>
+      <h2 class="visually-hidden">Написать нам</h2>
       <p>Введите имя, э-мейл и текст письма</p>
-      <button type="submit" name="">Отправить</button>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="letter-name">Ваше имя:</label>
+          <input type="text" id="letter-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+        <label for="letter-email">Ваш e-mail:</label>
+        <input type="text" id="letter-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <textarea name="letter-text" id="" cols="50" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit" name="">Отправить</button>
+      </form>
       <button type="button" name="">Закрыть</button>
     </section>
+    
   </body>
 </html>
+
+ <!-- «» -->
