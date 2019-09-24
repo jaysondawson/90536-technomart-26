@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cuprum", "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: none;
+
+    background-color: #ffffff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-logo,
+.index-top-logo {
+    background-color: #ee3643;
+}
+
+.top-logo:hover,
+.top-logo:focus {
+    background-color: #ca2c37;  
+}
+
+.top-logo:active {
+    background-color: #ba2732;
+}
+
+.top-menu {
+    background-color: #293449;
+}
+
+.top-menu a {
+    color: #ffffff;
+}
+
+.top-menu ul {
+    list-style: none;
+}
+
+
+input[type="search"] {
+    background-color: transparent;
+    border: none;
+}
+
+input[type="search"]::placeholder {
+    color: #ffffff;
+}
+
+.search input[type="search"]:hover,
+.top-menu .list a:hover,
+.top-menu .list a:focus {
+    background-color: #212a3a;
+}
+
+.search input[type="search"]:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.top-menu .list a:active {
+    background-color: #161d29;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.purchase a {
+    background-color: #63a63e;
+    color: #ffffff;
+}
+
+
+.purchase a:hover,
+.purchase a:focus {
+    background-color: #5fbb2d;
+}
+
+
+
