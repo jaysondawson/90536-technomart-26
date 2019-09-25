@@ -28,7 +28,8 @@ a {
 }
 
 .top-logo,
-.index-top-logo {
+.index-top-logo,
+.index-logo {
     background-color: #ee3643;
     box-shadow: 0 5px 0 0 #b52933;
 }
@@ -110,7 +111,8 @@ input[type="search"]::placeholder {
     color: rgb(255, 255, 255, 0.5);
 }
 
-.header {
+.header,
+.services {
     background-color: #f3f7f9;
 }
 
@@ -204,5 +206,363 @@ input[type="search"]::placeholder {
     background-color: #293449;
     color: rgb(255, 255, 255, 0.5);
 }
+
+.product-categories ul {
+    list-style: none;
+}
+
+.product-categories h3 {
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: bold; 
+    line-height: 30px;
+    text-transform: normal;
+}
+
+.product-categories a {
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.product-categories li:first-child {
+    background-color: #ffbf47;
+}
+
+.product-categories li:nth-child(2) {
+    background-color: #3bbce3;
+}
+
+.product-categories li:nth-child(3) {
+    background-color: #dc91d8;
+}
+
+.product-categories li:nth-child(5) {
+    background-color: #8ed78f;
+}
+
+.product-categories li:nth-child(6) {
+    background-color: #ffc047;
+}
+
+.product-categories a {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.product-categories a:hover,
+.product-categories a:focus {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.product-categories a:active {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.slider-1 h3,
+.slider-2 h3 {
+    margin: 0;
+    padding: 0;
+    
+    color: #ffffff;
+
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.slider-1 p,
+.slider-2 p {
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.slider-1 a,
+.slider-2 a,
+.popular-products .show-popular-products,
+.popular-producers .show-popular-producers,
+.credit-request,
+.more-about,
+.lost {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.slider-1 a:hover,
+.slider-1 a:focus,
+.slider-2 a:hover,
+.slider-2 a:focus,
+.popular-products .show-popular-products:hover,
+.popular-products .show-popular-products:focus,
+.popular-producers .show-popular-producers:hover,
+.popular-producers .show-popular-producers:focus,
+.credit-request:hover,
+.credit-request:focus,
+.more-about:hover,
+.more-about:focus,
+.lost:hover,
+.lost:focus {
+    background-color: #ca2c37;
+}
+
+.slider-1 a:active,
+.slider-2 a:active,
+.popular-products .show-popular-products:active,
+.popular-producers .show-popular-producers:active,
+.credit-request:active,
+.more-about:active,
+.lost:active {
+    background-color: #ba2732;
+}
+
+.popular-products-top,
+.popular-producers-top {
+    background-color: #f9f5f0;
+}
+
+.popular-products h2,
+.popular-producers h2,
+.delivery h3,
+.guarantee h3,
+.credit h3,
+.about-company h2 {
+    font-size: 30px;
+    font-weight: regular;
+    text-transform: uppercase;
+    line-height: 30px;
+
+    color: #32425c;
+}
+
+.services h2,
+.about-company h2,
+.contacts h2 {
+    font-size: 30px;
+    font-weight: regular;
+    text-transform: uppercase;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.popular-products ul {
+    list-style: none;
+}
+
+.popular-products-item {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    border: 1px solid #eaeaea;
+}
+
+.popular-products-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.popular-products-item:hover,
+.popular-products-item:focus {
+   box-shadow: 0 0 25px 0  rgb(41, 52, 73, 0.5);
+}
+
+.old-price {
+    color: #a9a9a9;
+
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.price {
+    font-weight: bold;
+    
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.active-product-item {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+}
+
+.buy {
+    color: #ffffff;  
+    background-color: #63a63e; 
+    box-shadow: 0 3px 0 0 #367315;
+}
+
+.buy:hover,
+.buy:focus {
+    background-color: #5fbb2d; 
+}
+
+.buy:active {
+    background-color: #518534; 
+    box-shadow: 0 3px 0 0 #518534;
+}
+
+.add-bookmarks {
+    color: #32425c;  
+    background: transparent; 
+    border: 3px solid #63a63e;
+}
+
+.add-bookmarks:hover,
+.add-bookmarks:focus {
+    border: 3px solid #32425c;
+}
+
+.add-bookmarks:focus {
+    border: 3px solid rgb(50, 66, 92, 0.3);
+    color: rgb(50, 66, 92, 0.3);
+}
+
+.popular-producers ul {
+    list-style: none;
+}
+
+.popular-producers-list li {
+    border: 1px solid #eaeaea;
+}
+
+.popular-producers-list li:hover,
+.popular-producers-list li:focus {
+    box-shadow: 10px 0 25px 0  rgb(41, 52, 73, 0.5);
+}
+
+.popular-producers-list li:active {
+    box-shadow: 4px 0 10 0  rgb(41, 52, 73, 0.3);  
+}
+
+.services ul,
+.about-company ul {
+    list-style: none;
+}
+
+.services p,
+.about-company p,
+.contacts p {
+    font-family: "PT Sans", "Cuprum", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    
+    color: #000000;
+
+}
+
+.partners {
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.footer-top {
+    background-color: #32425c;
+}
+
+.footer-top address {
+    font-size: 18px;
+    list-style: 24px;
+    font-weight: normal;
+    font-style: normal;
+
+    color: #ffffff;
+}
+
+.footer-navigation ul {
+    list-style: none;
+}
+
+.white-item a,
+.white-item ~ li a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    
+    color: #f1f5f7;
+}
+
+.yellow-item ~ li a {
+    color: #ffd180;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+    text-decoration: underline;
+}
+
+.white-item a:active,
+.white-item ~ li a:active {
+    text-decoration: none;
+    color: rgb(241, 245, 247, 0.5);
+}
+
+.yellow-item ~ li a:active {
+    color: rgb(255, 209, 128, 0.5);
+}
+
+.footer-bottom {
+   background-color: #293449;
+}
+
+.footer-bottom p,
+.footer-bottom span {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+
+    color: #ffffff;
+}
+
+.socials a {
+    color: #ffffff;
+}
+
+.socials ul {
+    list-style: none;
+}
+
+.socials a:hover,
+.socials a:focus,
+.socials a:active {
+    color: #ee3643;
+}
+
+.footer-bottom span {
+    color: #ffd180;
+}
+
+.footer-bottom span:hover,
+.footer-bottom span:focus {
+    text-decoration: underline;
+}
+
+.footer-bottom span:active {
+    color: #ee3643;
+    text-decoration: none;
+}
+/*
+1. В списке производителей не показывается состояние клика (тень остается прежней при нажатии на картинку
+2. Как скопировать стили теней в фотошопе или где это сделать? 
+3. */
+
 
 
