@@ -30,26 +30,33 @@ a {
 .top-logo,
 .index-top-logo {
     background-color: #ee3643;
+    box-shadow: 0 5px 0 0 #b52933;
 }
 
 .top-logo:hover,
 .top-logo:focus {
-    background-color: #ca2c37;  
+    background-color: #ca2c37; 
+    box-shadow: 0 5px 0 0 #9a212a; 
 }
 
 .top-logo:active {
     background-color: #ba2732;
+    box-shadow: 0 5px 0 0 #8e1e26; 
 }
 
-.top-menu {
+.top-menu,
+.main-navigation {
     background-color: #293449;
 }
 
 .top-menu a {
     color: #ffffff;
+    font-size: 17px;
+    line-height: 18px;
 }
 
-.top-menu ul {
+.top-menu ul,
+.main-navigation ul {
     list-style: none;
 }
 
@@ -60,12 +67,17 @@ input[type="search"] {
 }
 
 input[type="search"]::placeholder {
+    font-family: "Cuprum", "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+
     color: #ffffff;
 }
 
+
 .search input[type="search"]:hover,
-.top-menu .list a:hover,
-.top-menu .list a:focus {
+.top-menu ul a:hover,
+.top-menu ul a:focus {
     background-color: #212a3a;
 }
 
@@ -74,21 +86,123 @@ input[type="search"]::placeholder {
     color: #000000;
 }
 
-.top-menu .list a:active {
+.top-menu ul a:active {
     background-color: #161d29;
     color: rgb(255, 255, 255, 0.5);
 }
 
 .purchase a {
+    font-size: 17px;
+    line-height: 18px;
+
     background-color: #63a63e;
     color: #ffffff;
 }
 
 
-.purchase a:hover,
-.purchase a:focus {
+.purchase.item a:hover,
+.purchase.item a:focus {
     background-color: #5fbb2d;
 }
 
+.purchase.item a:active {
+    background-color: #518534;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.header {
+    background-color: #f3f7f9;
+}
+
+.header-navigation h2 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+}
+
+.phone-number {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+    border: 3px solid #ffffff;
+}
+
+.header-navigation address {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    color: #32425c;
+     
+}
+
+.header-navigation ul {
+    list-style: none;
+}
+
+.user-navigation a {
+    font-size: 21px;
+    line-height: 21px;
+
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.login-item:hover,
+.login-item:focus {
+    color: #ee3643;
+}
+
+.user-navigation a:active {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.login-navigation .login-name {
+    font-size: 21px;
+    line-height: 21px;
+
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.login-item{
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+
+
+.login-item:active {
+    color: rgb(50, 66, 92, 0.3);
+}
+
+.main-navigation {
+    background-color: #32425c;
+    box-shadow: 0 5px 0 0 #293449;
+}
+
+.main-navigation a {
+    font-size: 17px;
+    line-height: 18px;
+
+    color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    background-color: #293449;
+}
+
+.main-navigation a:active {
+    background-color: #293449;
+    color: rgb(255, 255, 255, 0.5);
+}
 
 
