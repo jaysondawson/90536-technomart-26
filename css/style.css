@@ -47,6 +47,8 @@ body {
 }
 
 .top-menu a {
+    display: block;
+
     font-size: 17px;
     line-height: 18px;
     text-decoration: none;
@@ -94,6 +96,8 @@ input[type="search"]::placeholder {
 }
 
 .purchase a {
+    display: block;
+
     font-size: 17px;
     line-height: 18px;
 
@@ -160,6 +164,8 @@ input[type="search"]::placeholder {
 }
 
 .user-navigation a {
+    display: block;
+
     font-size: 21px;
     line-height: 21px;
     font-style: normal;
@@ -223,6 +229,8 @@ input[type="search"]::placeholder {
 }
 
 .main-navigation a {
+    display: block;
+    
     font-size: 17px;
     line-height: 18px;
     font-style: normal;
@@ -259,6 +267,8 @@ input[type="search"]::placeholder {
 }
 
 .product-categories a {
+    display: block;
+
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -284,6 +294,8 @@ input[type="search"]::placeholder {
 }
 
 .product-categories a {
+    display: block;
+
     background-color: rgb(0, 0, 0, 0.1);
 }
 
@@ -408,6 +420,8 @@ input[type="search"]::placeholder {
 .active-product-item a,
 .footer-navigation a,
 .socials a {
+    display: block;
+
     text-decoration: none;
 }
 
@@ -486,17 +500,20 @@ input[type="search"]::placeholder {
     list-style: none;
 }
 
-.popular-producers-list li {
+.popular-producers-list a {
+    display: block;
     border: 1px solid #eaeaea;
 }
 
-.popular-producers-list li:hover,
-.popular-producers-list li:focus {
+.popular-producers-list a:hover,
+.popular-producers-list a:focus {
+    border: none;
     box-shadow: 10px 0 25px 0  rgb(41, 52, 73, 0.5);
 }
 
-.popular-producers-list li:active {
-    box-shadow: 4px 0 10 0  rgb(41, 52, 73, 0.3);  
+.popular-producers-list a:active {
+    border: none;
+    box-shadow: 10px 0 10px 0  rgb(41, 52, 73, 0.3);  
 }
 
 .services ul,
@@ -544,6 +561,8 @@ input[type="search"]::placeholder {
 
 .white-item a,
 .white-item ~ li a {
+    display: block;
+
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
@@ -552,6 +571,8 @@ input[type="search"]::placeholder {
 }
 
 .yellow-item ~ li a {
+    display: block;
+
     color: #ffd180;
 }
 
@@ -587,6 +608,8 @@ input[type="search"]::placeholder {
 }
 
 .socials a {
+    display: block;
+    
     color: #ffffff;
 }
 
