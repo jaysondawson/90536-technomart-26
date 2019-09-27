@@ -12,6 +12,8 @@ body {
     background-color: #ffffff;
 }
 
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -95,7 +97,7 @@ input[type="search"]::placeholder {
     color: rgb(255, 255, 255, 0.5);
 }
 
-.purchase a {
+.purchase-item a {
     display: block;
 
     font-size: 17px;
@@ -214,18 +216,6 @@ input[type="search"]::placeholder {
     
     background-color: #32425c;
     box-shadow: 0 5px 0 0 #293449;
-}
-
-.main-navigation ul,
-.product-categories ul,
-.popular-products ul,
-.popular-producers ul,
- .services ul,
- .about-company ul,
- .footer-navigation ul,
- .socials ul {
-    margin: 0;
-    padding: 0;
 }
 
 .main-navigation a {
@@ -383,6 +373,7 @@ input[type="search"]::placeholder {
 
 .popular-products h2,
 .popular-producers h2,
+
 .delivery h3,
 .guarantee h3,
 .credit h3,
@@ -400,7 +391,8 @@ input[type="search"]::placeholder {
 
 .services h2,
 .about-company h2,
-.contacts h2 {
+.contacts h2,
+.about-product h2 {
     margin: 0;
     padding: 0;
 
@@ -417,6 +409,8 @@ input[type="search"]::placeholder {
 }
 
 .popular-products-item a,
+.products-item a,
+.products-item,
 .active-product-item a,
 .footer-navigation a,
 .socials a {
@@ -425,7 +419,8 @@ input[type="search"]::placeholder {
     text-decoration: none;
 }
 
-.popular-products-item {
+.popular-products-item,
+.products-item {
     font-family: "PT Sans", "Arial", sans-serif;
     border: 1px solid #eaeaea;
 }
@@ -439,8 +434,10 @@ input[type="search"]::placeholder {
 }
 
 .popular-products-item:hover,
-.popular-products-item:focus {
-   box-shadow: 0 0 25px 0  rgb(41, 52, 73, 0.5);
+.popular-products-item:focus,
+.products-item:hover,
+.products-item:focus {
+   box-shadow: 0 10px 25px 0  rgb(41, 52, 73, 0.5);
 }
 
 .old-price {
@@ -508,12 +505,12 @@ input[type="search"]::placeholder {
 .popular-producers-list a:hover,
 .popular-producers-list a:focus {
     border: none;
-    box-shadow: 10px 0 25px 0  rgb(41, 52, 73, 0.5);
+    box-shadow: 0 10px 25px 0  rgb(41, 52, 73, 0.5);
 }
 
 .popular-producers-list a:active {
     border: none;
-    box-shadow: 10px 0 10px 0  rgb(41, 52, 73, 0.3);  
+    box-shadow: 0 10px 10px 0  rgb(41, 52, 73, 0.3);  
 }
 
 .services ul,
@@ -523,7 +520,8 @@ input[type="search"]::placeholder {
 
 .services p,
 .about-company p,
-.contacts p {
+.contacts p,
+.about-product p {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -546,13 +544,18 @@ input[type="search"]::placeholder {
     background-color: #32425c;
 }
 
-.footer-top address {
+.footer-top address,
+.footer-top .phone-number-footer  {
     font-size: 18px;
     list-style: 24px;
     font-weight: normal;
     font-style: normal;
 
     color: #ffffff;
+}
+
+.footer-top .phone-number-footer {
+    text-decoration: none;
 }
 
 .footer-navigation ul {
@@ -643,7 +646,13 @@ input[type="search"]::placeholder {
 
 
 .map-popup {
-    box-shadow: 0 0 16px 8px  rgb(41, 52, 73, 0.5);
+    box-shadow: 0 10px 16px 8px  rgb(41, 52, 73, 0.5);
+}
+
+.letter-popup,
+.basket-popup {
+    border-top: 7px solid #ff5257;
+    box-shadow: 0 10px 16px 8px  rgb(41, 52, 73, 0.5);
 }
 
 .letter-popup label {
@@ -693,12 +702,238 @@ textarea::placeholder {
     border: none;
 }
 
-.send-letter:hover,
-.send-letter:focus {
-background-color: #ca2c37;
+.basket-buttons a{
+    display: block;
+
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #ffffff;
+    background-color: #ee3643;
+
+    border: none;
 }
 
 .send-letter:hover,
-.send-letter:focus{
+.send-letter:focus,
+.basket-buttons a:hover,
+.basket-buttons a:focus {
+background-color: #ca2c37;
+}
+
+.send-letter:active,
+.basket-buttons a:active {
 background-color: #ba2732;
 }
+
+.catalog h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    color: #32425c;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+}
+
+
+.breadcrumbs a,
+.sorting h3,
+.filter-cost h3,
+.sorting a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.sorting-cost a,
+.sorting-up a {
+    color: #ee3643;
+}
+
+.sorting-type a,
+.sorting-function a {
+    color: rgb(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-down a {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.filter-cost h3,
+.fullbar,
+.filter-cost input {
+    background-color: #f7f3ec;
+}
+
+.filter-cost p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.filter-cost input {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    
+    border: none;
+}
+
+
+.filter-producers,
+.filter-power {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    border: none;
+}
+
+.filter-producers ul,
+.filter-power ul {
+    list-style: none;
+}
+
+.filter-producers legend,
+.filter-power legend {
+    font-weight: bold;
+}
+
+.filter button {
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    border: 1px solid #e5e5e5;
+    background: transparent;
+
+}
+
+.filter button:hover,
+.filter button:focus {
+    border-color: #bdc6ca;
+}
+
+.filter button:active {
+    border-color: #ee3643;
+}
+
+
+.sorting ul,
+.products ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sorting p,
+.sorting h3 {
+    margin: 0;
+    padding: 0;  
+}
+
+.products h3 {
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.products a {
+    display: block;
+    text-decoration: none;
+}
+
+.pages {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.pages a {
+    display: block;
+
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 1px solid #e5e5e5;
+
+    color: #000000;
+}
+
+.pages .current {
+    background-color: #ee3643;
+}
+
+.pages a:hover,
+.pages a:focus {
+    border-color: #bdc6ca;
+}
+
+.pages a:active {
+    border-color: #ee3643;
+}
+
+.basket-popup h2{
+    font-family: inherit;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+}
+
+/*
+объединить
+
+text-decoration: none;
+list-style: none;
+
+margin: 0;
+padding: 0;
+
+h2, h3
+
+*/
+.main-navigation ul,
+.product-categories ul,
+.popular-products ul,
+.popular-producers ul,
+ .services ul,
+ .about-company ul,
+ .footer-navigation ul,
+ .socials ul,
+ .header-navigation ul,
+ .breadcrumbs ul,
+ .filter-producers ul,
+ .filter-power ul,
+ .filter-producers legend,
+ .filter-power legend,
+ .catalog h2,
+ .basket-popup h2 {
+    margin: 0;
+    padding: 0;
+}
+
