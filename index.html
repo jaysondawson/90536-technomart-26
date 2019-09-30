@@ -15,36 +15,46 @@
         <!--Верхнее меню с поиском-->
 
       <div class="top-menu">
-      <a class="index-top-logo"><img src="img/svg-technomart/logo-technomart.svg" width="107" height="18" alt="Техномарт"></a>
-        <ul class="top-menu-list">
-          <!--ФОРМА ПОИСКА-->
+        <div class="container">
+          <a class="index-top-logo"><img src="img/svg-technomart/logo-technomart.svg" width="107" height="18" alt="Техномарт"></a>
+          <ul class="top-menu-list">
+          
+            <!--ФОРМА ПОИСКА-->
 
           <form class="search" action="https://echo.htmlacademy.ru" method="GET">
             <input type="search" placeholder="Поиск:">
           </form>
-          <li><a href="#">Закладки: 0</a></li>
-          <li><a href="#">Корзина: 0</a></li>
+          <li><a class="bookmarks" href="#">Закладки: 0</a></li>
+          <li><a class="basket" href="#">Корзина: 0</a></li>
           <li class="purchase-item"><a href="#">Оформить заказ</a> </li>
         </ul>
+        </div>
+        
       </div>
 
       <div class="header">
         <section class="header-navigation">
-          <h2>
-            Интернет-магазин строительных материалов и инструментов для ремонта
-          </h2>
-          <a class="phone-number" href="tel:+78125550555">+7(812)555-05-55</a>
-          <address>г.Санкт-Петербург, ул.Б.Конюшенная, д.19-8</address>
-          <ul class="user-navigation">
-            <li><a href="#">Войти</a>
-            <li><a href="#">Регистрация</a></li>
-          </ul>
+          <div class="container">
+            <div class="header-navigation-wrapper">
+              <h2>
+                Интернет-магазин <br>строительных материалов <br> и инструментов для ремонта
+              </h2>
+              <div class="header-contacts">
+                <a class="phone-number" href="tel:+78125550555">+7(812)555-05-55</a>
+                <address>г.Санкт-Петербург, ул.Б.Конюшенная, д.19-8</address>
+              </div>
+              <ul class="user-navigation">
+                <li><a class="user-login" href="#">Войти</a>
+                <li><a class="user-registration" href="#">Регистрация</a></li>
+              </ul>
+            </div>           
+          </div>
         </section>
 
         <!--Навигация-->
-
-        <nav class="main-navigation">
-          <ul>
+        <div class="container">
+          <nav class="main-navigation">
+          <ul class="main-navigation-list">
             <li><a>Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -54,52 +64,56 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
+        </div>
+        
       </div>
     </header>
 
     <main>
 
       <!--ПРОМО-БЛОК: КАТЕГОРИИ ТОВАРОВ-->
+      <div class="container">
+        <section class="product-categories">
+          <h2 class="visually-hidden">Категории товаров</h2>
+          <ul class="product-list">
+            <li class="product-orange">
+              <h3>Материалы</h3>
+              <a href="#">На любой вкус</a>
+            </li>
+            <li class="product-blue">
+              <h3>Инструмент</h3>
+              <a href="#">На все случаи</a>
+            </li>
+            <li class="product-violet">
+              <h3>Техника</h3>
+              <a href="#">Для стройки</a>
+            </li>
+            <li>
+              <div class="slider-1">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <img src="img/slider-1.jpg" alt="Слайдер 1">
+                <a href="catalog.html">Открыть каталог</a>
+              </div>
+              <div class="slider-2">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <img src="img/slider-2.jpg" alt="Слайдер 1">
+                <a href="catalog.html">Открыть каталог</a>
+              </div>
+            </li>
+            <li class="product-green">
+              <h3>Скидки 50%</h3>
+              <a href="#">На 350 товаров</a>
+            </li>
+            <li class="product-orange">
+              <h3>Доставка</h3>
+              <a href="#">Бесплатно</a>
+            </li>
+          </ul>
+        </section>
+      </div>  
       
-      <section class="product-categories">
-        <h2 class="visually-hidden">Категории товаров</h2>
-        <ul class="product-list">
-          <li class="product-orange">
-            <h3>Материалы</h3>
-            <a href="#">На любой вкус</a>
-          </li>
-          <li class="product-blue">
-            <h3>Инструмент</h3>
-            <a href="#">На все случаи</a>
-          </li>
-          <li class="product-violet">
-            <h3>Техника</h3>
-            <a href="#">Для стройки</a>
-          </li>
-          <li>
-            <div class="slider-1">
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
-              <img src="img/slider-1.jpg" alt="Слайдер 1">
-              <a href="catalog.html">Открыть каталог</a>
-            </div>
-            <div class="slider-2">
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-              <img src="img/slider-2.jpg" alt="Слайдер 1">
-              <a href="catalog.html">Открыть каталог</a>
-            </div>
-          </li>
-          <li class="product-green">
-            <h3>Скидки 50%</h3>
-            <a href="#">На 350 товаров</a>
-          </li>
-          <li class="product-orange">
-            <h3>Доставка</h3>
-            <a href="#">Бесплатно</a>
-          </li>
-        </ul>
-      </section>
 
       <!--ПОПУЛЯРНЫЕ ТОВАРЫ-->
 

@@ -1,10 +1,3 @@
-/*
-
-* {
-    outline: 1px solid red;
-}
-
-*/
 body {
     margin: 0;
     padding: 0;
@@ -117,7 +110,6 @@ a {
     box-shadow: 0 5px 0 0 #b52933;
 }
 
-
 .top-logo:hover,
 .top-logo:focus {
     background-color: #ca2c37; 
@@ -142,9 +134,6 @@ a {
 }
 
 input[type="search"] {
-    width: 250px;
-    height: 42px;
-
     background-color: transparent;
     border: none;
 }
@@ -174,7 +163,7 @@ input[type="search"]::placeholder {
     color: rgb(255, 255, 255, 0.5);
 }
 
-.purchase-item a {
+.purchase-item a{
     font-size: 17px;
     line-height: 18px;
 
@@ -203,6 +192,7 @@ input[type="search"]::placeholder {
     line-height: 23px;
     font-weight: normal;
     font-style: italic;
+    
     color: #ee3643;
 }
 
@@ -849,7 +839,152 @@ background-color: #ba2732;
     color: #000000;
 }
 
+/*НАЧИНАЕМ ПОСТРОЕНИЕ СЕТОК!*/
+
+* {
+    outline: 1px solid red;
+}
+
+.top-menu {
+    width: 100%;
+    
+}
+
+.top-menu-list {
+    display: flex;
+}
+
+.container {
+    display: flex;
+
+    width: 940px;
+    margin: 0 auto;
+}
 
 
+.index-top-logo {
+    display: flex;
 
+    width: 220px;
+    height: 42px;
+    align-items: center;
+}
+
+.index-top-logo img {
+    margin: 0 auto;
+}
+
+input[type="search"] {
+    width: 260px;
+    height: 42px;
+}
+
+.bookmarks {
+    width: 160px;
+    height: 42px;
+}
+
+.basket {
+    width: 150px;
+    height: 42px;
+}
+
+.purchase-item a {
+    width: 150px;
+    height: 42px;
+}
+
+.header {
+    width: 100%;
+    height: 278px;
+}
+
+.header-navigation-wrapper {
+    display: flex;
+    height: 68px;
+    
+    margin-top: 46px;
+    margin-bottom: 44px;
+}
+
+.header-navigation h2 {
+    margin-left: 53px;
+}
+
+.phone-number {
+    height: 38px;
+}
+
+.header-contacts {
+    margin-left: 70px;
+
+    width: 270px;
+    height: 68px;
+}
+
+.user-navigation {
+    display: flex;
+
+    
+}
+
+.user-login  {
+    margin-left: 69px;
+    height: 45px;
+    width: 121px;
+}
+
+.user-registration  {
+    margin-left: 10px;
+    height: 45px;
+    width: 150px;
+}
+
+.main-navigation-list {
+    display: flex;
+}
+
+.main-navigation-list a {
+    height: 55px;
+}
+
+.main-navigation-list > li:first-child {
+    width: 150px;
+}
+
+.main-navigation-list > li:nth-child(2) {
+    width: 100px;
+}
+
+.main-navigation-list > li:nth-child(3) {
+    width: 140px;
+}
+
+.main-navigation-list > li:nth-child(4) {
+    width: 90px;
+}
+
+.main-navigation-list > li:nth-child(5) {
+    width: 200px;
+}
+
+.main-navigation-list > li:nth-child(6) {
+    width: 100px;
+}
+
+.main-navigation-list > li:nth-child(7) {
+    width: 160px;
+}
+
+.product-categories {
+    display: flex;
+}
+
+
+.product-orange,
+.product-blue,
+.product-violet {
+    width: 300px;
+    height: 123px;
+}
 
