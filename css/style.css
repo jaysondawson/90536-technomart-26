@@ -137,8 +137,7 @@ a {
 .top-menu a {
     font-size: 17px;
     line-height: 18px;
-    text-decoration: none;
-
+    
     color: #ffffff;
 }
 
@@ -176,8 +175,6 @@ input[type="search"]::placeholder {
 }
 
 .purchase-item a {
-    display: block;
-
     font-size: 17px;
     line-height: 18px;
 
@@ -213,8 +210,7 @@ input[type="search"]::placeholder {
     font-size: 21px;
     line-height: 21px;
     font-weight: normal;
-    text-decoration: none;
-
+    
     color: #ee3643;
     border: 3px solid #ffffff;
 }
@@ -230,14 +226,11 @@ input[type="search"]::placeholder {
 }
 
 .user-navigation a {
-    display: block;
-
     font-size: 21px;
     line-height: 21px;
     font-style: normal;
     font-weight: normal;
-    text-decoration: none;
-
+    
     color: #000000;
     background-color: #ffffff;
 }
@@ -278,14 +271,11 @@ input[type="search"]::placeholder {
 }
 
 .main-navigation a {
-    display: block;
-    
     font-size: 17px;
     line-height: 18px;
     font-style: normal;
     font-weight: normal;
-    text-decoration: none;
-
+    
     color: #ffffff;
 }
 
@@ -312,8 +302,7 @@ input[type="search"]::placeholder {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    text-decoration: none;
-
+    
     color: #ffffff;
 }
 
@@ -373,7 +362,6 @@ input[type="search"]::placeholder {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    text-decoration: none;
 
     color: #ffffff;
     background-color: #ee3643;
@@ -514,7 +502,6 @@ input[type="search"]::placeholder {
 }
 
 .popular-producers-list a {
-    display: block;
     border: 1px solid #eaeaea;
 }
 
@@ -565,14 +552,8 @@ input[type="search"]::placeholder {
     color: #ffffff;
 }
 
-.footer-top .phone-number-footer {
-    text-decoration: none;
-}
-
 .white-item a,
 .white-item ~ li a {
-    display: block;
-
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
@@ -581,8 +562,6 @@ input[type="search"]::placeholder {
 }
 
 .yellow-item ~ li a {
-    display: block;
-
     color: #ffd180;
 }
 
@@ -593,7 +572,6 @@ input[type="search"]::placeholder {
 
 .white-item a:active,
 .white-item ~ li a:active {
-    text-decoration: none;
     color: rgb(241, 245, 247, 0.5);
 }
 
@@ -615,8 +593,6 @@ input[type="search"]::placeholder {
 }
 
 .socials a {
-    display: block;
-    
     color: #ffffff;
 }
 
@@ -637,7 +613,6 @@ input[type="search"]::placeholder {
 
 .footer-bottom span:active {
     color: #ee3643;
-    text-decoration: none;
 }
 
 .map-popup {
@@ -697,14 +672,11 @@ textarea::placeholder {
 }
 
 .basket-buttons a{
-    display: block;
-
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    text-decoration: none;
-
+    
     color: #ffffff;
     background-color: #ee3643;
 
@@ -738,25 +710,46 @@ background-color: #ba2732;
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
-    text-decoration: none;
     text-transform: uppercase;
 
     color: #000000;
 }
 
 .sorting-cost a,
-.sorting-up a {
-    color: #ee3643;
-}
-
 .sorting-type a,
 .sorting-function a {
     color: rgb(0, 0, 0, 0.3);
     border-bottom: 1px dotted #ee3643;
 }
 
+.sorting-cost a:hover,
+.sorting-cost a:focus,
+.sorting-type a:hover,
+.sorting-type a:focus,
+.sorting-function a:hover,
+.sorting-function a:focus {
+    color: rgb(0, 0, 0, 1);
+    border-bottom: 1px solid #ee3643;
+}
+
+.sorting-up a,
 .sorting-down a {
     color: rgb(0, 0, 0, 0.3);
+}
+
+.sorting-up a:hover,
+.sorting-up a:focus,
+.sorting-down a:hover,
+.sorting-down a:focus {
+    color: rgb(0, 0, 0, 1);
+}
+
+.active-filter a,
+.active-filter a:hover,
+.active-filter a:focus,
+.active-filter a:active {
+    color: #ee3643;
+    border: none;
 }
 
 .filter-cost h3,
@@ -826,21 +819,12 @@ background-color: #ba2732;
     color: #000000;
 }
 
-.products a {
-    display: block;
-    text-decoration: none;
-}
-
 .pages a {
-    display: block;
-
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
-    text-decoration: none;
-
+    
     border: 1px solid #e5e5e5;
-
     color: #000000;
 }
 
@@ -864,6 +848,7 @@ background-color: #ba2732;
     line-height: 30px;
     color: #000000;
 }
+
 
 
 
