@@ -1,3 +1,10 @@
+/*
+
+* {
+    outline: 1px solid red;
+}
+
+*/
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +20,6 @@ body {
 }
 
 
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -25,12 +31,92 @@ body {
     overflow: hidden;
 }
 
+.top-menu ul,
+.main-navigation ul,
+.header-navigation ul,
+.product-categories ul,
+.popular-products ul,
+.popular-producers ul,
+.services ul,
+.about-company ul,
+.footer-navigation ul,
+.socials ul,
+.breadcrumbs ul,
+.filter-producers ul,
+.filter-power ul,
+.sorting ul,
+.products ul,
+.pages {
+    list-style: none;
+}
+
+.top-menu-list,
+.header-navigation h2,
+.user-navigation,
+.main-navigation ul,
+.product-list,
+.product-list h3,
+.product-list p,
+.popular-products-top h2,
+.popular-products ul,
+.popular-products-item h3,
+.popular-products-item p,
+.popular-producers-top h2,
+.popular-producers-list,
+.services h2,
+.services h3,
+.services p,
+.services ul,
+.about-company h2,
+.about-company p,
+.partners,
+.contacts h2,
+.contacts p,
+.footer-top p,
+.footer-navigation ul,
+.rights p,
+.socials ul,
+.feedback p,
+.developed p,
+.map-popup p,
+.letter-popup,
+.product-categories ul,
+.popular-products ul,
+.popular-producers ul,
+.services ul,
+.about-company ul,
+.footer-navigation ul,
+.socials ul,
+.header-navigation ul,
+.breadcrumbs ul,
+.filter-producers ul,
+.filter-power ul,
+.filter-producers legend,
+.filter-power legend,
+.catalog h2,
+.basket-popup h2,
+.products-list,
+.sorting ul,
+.filter-producers,
+.filter-power,
+.about-product p,
+.pages{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
 .top-logo,
 .index-top-logo,
 .index-logo {
     background-color: #ee3643;
     box-shadow: 0 5px 0 0 #b52933;
 }
+
 
 .top-logo:hover,
 .top-logo:focus {
@@ -49,8 +135,6 @@ body {
 }
 
 .top-menu a {
-    display: block;
-
     font-size: 17px;
     line-height: 18px;
     text-decoration: none;
@@ -58,16 +142,10 @@ body {
     color: #ffffff;
 }
 
-.top-menu ul,
-.main-navigation ul {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-
 input[type="search"] {
+    width: 250px;
+    height: 42px;
+
     background-color: transparent;
     border: none;
 }
@@ -124,17 +202,12 @@ input[type="search"]::placeholder {
 }
 
 .header-navigation h2 {
-    margin: 0;
-    padding: 0;
-
     font-size: 16px;
     line-height: 23px;
     font-weight: normal;
     font-style: italic;
     color: #ee3643;
 }
-
-
 
 .phone-number {
     font-size: 21px;
@@ -154,15 +227,6 @@ input[type="search"]::placeholder {
 
     color: #32425c;
      
-}
-
-.header-navigation ul {
-    list-style: none;
-}
-
-.user-navigation {
-    margin: 0;
-    padding: 0;
 }
 
 .user-navigation a {
@@ -204,16 +268,11 @@ input[type="search"]::placeholder {
     text-decoration: underline;
 }
 
-
-
 .login-item:active {
     color: rgb(50, 66, 92, 0.3);
 }
 
 .main-navigation {
-    margin: 0;
-    padding: 0;
-    
     background-color: #32425c;
     box-shadow: 0 5px 0 0 #293449;
 }
@@ -240,25 +299,16 @@ input[type="search"]::placeholder {
     color: rgb(255, 255, 255, 0.5);
 }
 
-.product-categories ul {
-    list-style: none;
-}
-
 .product-categories h3 {
-    margin: 0;
-    padding: 0;
-
-    color: #ffffff;
-
     font-size: 24px;
     font-weight: bold; 
     line-height: 30px;
     text-transform: normal;
+    
+    color: #ffffff;
 }
 
 .product-categories a {
-    display: block;
-
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -284,8 +334,6 @@ input[type="search"]::placeholder {
 }
 
 .product-categories a {
-    display: block;
-
     background-color: rgb(0, 0, 0, 0.1);
 }
 
@@ -300,25 +348,19 @@ input[type="search"]::placeholder {
 
 .slider-1 h3,
 .slider-2 h3 {
-    margin: 0;
-    padding: 0;
-
-    color: #ffffff;
-
     font-size: 36px;
     font-weight: bold;
     line-height: 36px;
+
+    color: #ffffff;
 }
 
 .slider-1 p,
 .slider-2 p {
-    margin: 0;
-    padding: 0;
-
-    color: #ffffff;
-
     font-size: 18px;
     line-height: 24px;
+
+    color: #ffffff;
 }
 
 .slider-1 a,
@@ -370,17 +412,12 @@ input[type="search"]::placeholder {
 }
 
 
-
 .popular-products h2,
 .popular-producers h2,
-
 .delivery h3,
 .guarantee h3,
 .credit h3,
 .about-company h2 {
-    margin: 0;
-    padding: 0;
-
     font-size: 30px;
     font-weight: normal;
     text-transform: uppercase;
@@ -393,9 +430,6 @@ input[type="search"]::placeholder {
 .about-company h2,
 .contacts h2,
 .about-product h2 {
-    margin: 0;
-    padding: 0;
-
     font-size: 30px;
     font-weight: normal;
     text-transform: uppercase;
@@ -404,20 +438,6 @@ input[type="search"]::placeholder {
     color: #000000;
 }
 
-.popular-products ul {
-    list-style: none;
-}
-
-.popular-products-item a,
-.products-item a,
-.products-item,
-.active-product-item a,
-.footer-navigation a,
-.socials a {
-    display: block;
-
-    text-decoration: none;
-}
 
 .popular-products-item,
 .products-item {
@@ -493,10 +513,6 @@ input[type="search"]::placeholder {
     color: rgb(50, 66, 92, 0.3);
 }
 
-.popular-producers ul {
-    list-style: none;
-}
-
 .popular-producers-list a {
     display: block;
     border: 1px solid #eaeaea;
@@ -513,21 +529,16 @@ input[type="search"]::placeholder {
     box-shadow: 0 10px 10px 0  rgb(41, 52, 73, 0.3);  
 }
 
-.services ul,
-.about-company ul {
-    list-style: none;
-}
-
 .services p,
 .about-company p,
 .contacts p,
 .about-product p {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
+    line-height: 24px;
     font-style: normal;
     font-weight: normal;
-    line-height: 24px;
-    
+        
     color: #000000;
 
 }
@@ -556,10 +567,6 @@ input[type="search"]::placeholder {
 
 .footer-top .phone-number-footer {
     text-decoration: none;
-}
-
-.footer-navigation ul {
-    list-style: none;
 }
 
 .white-item a,
@@ -600,9 +607,6 @@ input[type="search"]::placeholder {
 
 .footer-bottom p,
 .footer-bottom span {
-    margin: 0;
-    padding: 0;
-
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
@@ -614,10 +618,6 @@ input[type="search"]::placeholder {
     display: block;
     
     color: #ffffff;
-}
-
-.socials ul {
-    list-style: none;
 }
 
 .socials a:hover,
@@ -639,11 +639,6 @@ input[type="search"]::placeholder {
     color: #ee3643;
     text-decoration: none;
 }
-/*
-1. В списке производителей не показывается состояние клика (тень остается прежней при нажатии на картинку
-2. Как скопировать стили теней в фотошопе или где это сделать? 
-3. */
-
 
 .map-popup {
     box-shadow: 0 10px 16px 8px  rgb(41, 52, 73, 0.5);
@@ -679,7 +674,6 @@ textarea {
 
     color: #a9a9a9;
 }
-
 
 textarea::placeholder {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -737,11 +731,6 @@ background-color: #ba2732;
     color: #32425c;
 }
 
-.breadcrumbs ul {
-    list-style: none;
-}
-
-
 .breadcrumbs a,
 .sorting h3,
 .filter-cost h3,
@@ -796,9 +785,6 @@ background-color: #ba2732;
 
 .filter-producers,
 .filter-power {
-    margin: 0;
-    padding: 0;
-
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -806,11 +792,6 @@ background-color: #ba2732;
     text-transform: uppercase;
 
     border: none;
-}
-
-.filter-producers ul,
-.filter-power ul {
-    list-style: none;
 }
 
 .filter-producers legend,
@@ -838,21 +819,6 @@ background-color: #ba2732;
     border-color: #ee3643;
 }
 
-
-.sorting ul,
-.products ul {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.sorting p,
-.sorting h3 {
-    margin: 0;
-    padding: 0;  
-}
-
 .products h3 {
     font-size: 18px;
     line-height: 20px;
@@ -863,13 +829,6 @@ background-color: #ba2732;
 .products a {
     display: block;
     text-decoration: none;
-}
-
-.pages {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
 }
 
 .pages a {
@@ -885,8 +844,9 @@ background-color: #ba2732;
     color: #000000;
 }
 
-.pages .current {
+.current a{
     background-color: #ee3643;
+    border: none;
 }
 
 .pages a:hover,
@@ -905,35 +865,6 @@ background-color: #ba2732;
     color: #000000;
 }
 
-/*
-объединить
 
-text-decoration: none;
-list-style: none;
 
-margin: 0;
-padding: 0;
-
-h2, h3
-
-*/
-.main-navigation ul,
-.product-categories ul,
-.popular-products ul,
-.popular-producers ul,
- .services ul,
- .about-company ul,
- .footer-navigation ul,
- .socials ul,
- .header-navigation ul,
- .breadcrumbs ul,
- .filter-producers ul,
- .filter-power ul,
- .filter-producers legend,
- .filter-power legend,
- .catalog h2,
- .basket-popup h2 {
-    margin: 0;
-    padding: 0;
-}
 
