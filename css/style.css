@@ -67,6 +67,7 @@ body {
 .services h3,
 .services p,
 .services ul,
+.services-navigation p,
 .about-company h2,
 .about-company p,
 .partners,
@@ -499,17 +500,17 @@ input[type="search"]::placeholder {
     color: rgb(50, 66, 92, 0.3);
 }
 
-.popular-producers-list a {
+.popular-producers-item {
     border: 1px solid #eaeaea;
 }
 
-.popular-producers-list a:hover,
-.popular-producers-list a:focus {
+.popular-producers-item:hover,
+.popular-producers-item:focus {
     border: none;
     box-shadow: 0 10px 25px 0  rgb(41, 52, 73, 0.5);
 }
 
-.popular-producers-list a:active {
+.popular-producers-item:active {
     border: none;
     box-shadow: 0 10px 10px 0  rgb(41, 52, 73, 0.3);  
 }
@@ -526,6 +527,14 @@ input[type="search"]::placeholder {
         
     color: #000000;
 
+}
+
+.services-navigation p {
+    font-size: 21px;
+    line-height: 30px;
+
+    color: #ffffff;
+    background-color: #32425c;
 }
 
 .partners {
@@ -1012,4 +1021,126 @@ input[type="search"] {
 .product-green,
 .product-orange-2 {
     margin-top: 20px;
+}
+
+.popular-products-top {
+    display: flex;
+    align-items: center;
+    
+    height: 89px;
+    width: 940px;
+
+    margin-top: 53px;
+    margin-bottom: 20px;
+}
+
+.popular-products-top h2,
+.popular-producers-top h2 {
+    margin-left: 30px;
+}
+
+.show-popular-products {
+    width: 253px;
+    height: 38px;
+
+    border-radius: 3px;
+
+    margin-left: 373px;
+}
+
+.popular-products-list {
+    display: flex;
+}
+
+.popular-products-item {
+    width: 220px;
+    height: 318px;
+}
+
+.popular-products-item:not(:last-child) {
+    margin-right: 17.5px;
+}
+
+.popular-producers-top {
+    display: flex;
+    align-items: center;
+
+    height: 89px;
+    width: 940px;
+
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+
+.show-popular-producers {
+    width: 253px;
+    height: 38px;
+
+    border-radius: 3px;
+
+    margin-left: 270px;
+  
+}
+
+.popular-producers-list {
+    display: flex;
+}
+
+.popular-producers-item {
+    width: 220px;
+    height: 145px;
+}
+
+.popular-producers ul li:not(:last-child) {
+    margin-right: 17.5px;
+}
+
+.services-wrapper {
+    display:  flex;
+    flex-direction: column;
+}
+
+.services {
+    width: 100%;
+    height: 522px;
+    
+    margin-top: 85px;
+}
+
+.services h2 {
+    margin-top: 65px;
+  
+}
+
+.services-navigation-wrapper {
+    display: flex;
+
+    margin-top: 70px;
+}
+
+.services-navigation p {
+    width: 240px;
+    height: 62px;
+
+    border-top: 1px solid #41516a;
+    border-bottom: 1px solid #2b364a;
+}
+
+.service-description li {
+    margin-left: 80px;
+}
+
+.delivery p,
+.guarantee p,
+.credit p {
+    margin-top: 30px;
+}
+
+.credit-request {
+    width: 195px;
+    height: 38px;
+
+    border-radius: 3px;
+
+    margin-top: 30px;
 }
