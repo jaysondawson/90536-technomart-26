@@ -1144,3 +1144,18 @@ input[type="search"] {
 
     margin-top: 30px;
 }
+
+.company-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-company {
+    width: 540px;
+    height: 450px;
+
+}
+
+.contacts {
+    
+}
