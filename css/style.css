@@ -1147,7 +1147,7 @@ input[type="search"] {
 
 .company-wrapper {
     display: flex;
-    justify-content: space-between;
+    height: 537px;
 }
 
 .about-company {
@@ -1156,6 +1156,39 @@ input[type="search"] {
 
 }
 
+.on-line-top {
+    height: 113px;
+
+    margin-top: 75px;
+}
+
+.on-line-top p {
+    margin-top: 25px;
+}
+
+.on-line-middle {
+    margin-top: 25px;
+}
+
 .contacts {
-    
+    margin-left: 100px;
+}
+
+.more-about {
+    width: 220px;
+    height: 38px;
+
+    border-radius: 3px;
+    margin-top: 42px;
+}
+
+.partners li {
+    margin-top: 17px;
+}
+
+.lost {
+    width: 300px;
+    height: 38px;
+    border-radius: 3px;
+    margin-top: 38px;
 }
