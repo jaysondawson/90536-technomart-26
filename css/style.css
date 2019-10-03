@@ -86,7 +86,6 @@ body {
 .popular-producers ul,
 .services ul,
 .about-company ul,
-.footer-navigation ul,
 .socials ul,
 .header-navigation ul,
 .breadcrumbs ul,
@@ -1213,6 +1212,10 @@ input[type="search"] {
     background-color: #32425c;
 }
 
+.footer-wrapper .container {
+    height: 193px;
+}
+
 .index-logo {
     display: flex;
     align-items: center;
@@ -1227,7 +1230,24 @@ input[type="search"] {
     margin: 0 auto;
 }
 
-.footer-navigation-white {
-    margin-left: 68px;
+.footer-top address {
+    width: 321px;
 }
 
+.footer-navigation-white.top {
+    margin-left: 68px;
+    margin-top: 35px;
+}
+
+.footer-navigation-white li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.footer-navigation-yellow.bottom {
+    margin-left: 92px;
+    margin-top: 33px;
+}
+
+.footer-navigation-yellow li:not(:last-child) {
+    margin-right: 61px;
+}
