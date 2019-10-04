@@ -529,12 +529,32 @@ input[type="search"]::placeholder {
 
 }
 
-.services-navigation p {
+.services-navigation a {
     font-size: 21px;
     line-height: 30px;
 
     color: #ffffff;
     background-color: #32425c;
+}
+
+.services-navigation a:hover,
+.services-navigation a:focus {
+    background-color: #293449;
+    border-color: #293449;
+}
+
+.services-navigation .service-active {
+    color: #32425c;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.services-navigation .service-active:hover,
+.services-navigation .service-active:focus,
+.services-navigation .service-active:active {
+    color: #32425c;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
 
 .partners {
@@ -1257,13 +1277,18 @@ input[type="search"]::placeholder {
 
 .services-navigation-wrapper {
     display: flex;
+    
 
     margin-top: 70px;
 }
 
-.services-navigation p {
-    width: 240px;
+.services-navigation a {
+    width: 218px;
     min-height: 62px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
 
     border-top: 1px solid #41516a;
     border-bottom: 1px solid #2b364a;
