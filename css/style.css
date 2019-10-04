@@ -1251,3 +1251,26 @@ input[type="search"] {
 .footer-navigation-yellow li:not(:last-child) {
     margin-right: 61px;
 }
+
+.footer-bottom .container {
+    align-items: center;
+    height: 107px;
+}
+
+
+.socials {
+    margin-left: 163px;
+
+    width: 131px;
+}
+
+.feedback {
+    margin-left: 119px;
+    
+}
+
+.developed {
+    margin-left: 53px;
+    
+}
+
