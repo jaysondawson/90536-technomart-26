@@ -136,6 +136,7 @@ a {
 .top-menu a {
     font-size: 17px;
     line-height: 18px;
+    font-weight: normal;   
     
     color: #ffffff;
 }
@@ -1064,7 +1065,7 @@ input[type="search"]::placeholder {
 .product-violet,
 .product-green {
     width: 300px;
-    height: 123px;
+    min-height: 123px;
 }
 
 .product-blue,
@@ -1072,6 +1073,43 @@ input[type="search"]::placeholder {
 .product-green,
 .product-orange-2 {
     margin-left: 20px;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list h3,
+.vertical-flex h3 {
+    margin-left: 23px;
+    margin-top: 26px;
+}
+
+
+
+.product-list a,
+.vertical-flex a {
+    width: 125px;
+    min-height: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    border-radius: 3px;
+}
+
+.product-orange a,
+.product-orange-2 a,
+.product-blue a,
+.product-violet a,
+.product-green a{
+    display: flex;
+    align-items: center;
+
+    margin-left: 23px;
+    margin-top: 10px;
 }
 
 .slider-1,
