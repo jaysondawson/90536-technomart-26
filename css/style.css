@@ -897,20 +897,56 @@ input[type="search"] {
     height: 42px;
 }
 
+input[type="search"]::placeholder {
+    min-height: 42px;
+    padding-left: 49px;  
+}
+
+
+
 .bookmarks {
-    width: 160px;
-    height: 42px;
+    width: 150px;
+    min-height: 42px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.top-menu-list .bookmarks {
+    display: flex;
+    align-items: center;
 }
 
 .basket {
-    width: 150px;
-    height: 42px;
+    width: 140px;
+    min-height: 42px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.top-menu-list .basket {
+    display: flex;
+    align-items: center;
 }
 
 .purchase-item a {
-    width: 150px;
-    height: 42px;
+    width: 140px;
+    min-height: 42px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
 }
+
+.purchase-item .process {
+    display: flex;
+    align-items: center;
+}
+
+
 
 .header {
     width: 100%;
@@ -930,7 +966,21 @@ input[type="search"] {
 }
 
 .phone-number {
-    height: 38px;
+    min-height: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.header-contacts .phone-number {
+    display: flex;
+    align-items: center; 
+}
+
+.header-contacts address {
+    display: flex;
+    justify-content: center;
 }
 
 .header-contacts {
@@ -948,50 +998,57 @@ input[type="search"] {
 
 .user-login  {
     margin-left: 69px;
-    height: 45px;
-    width: 121px;
+    
+    min-height: 45px;
+    width: 111px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.user-navigation .user-login {
+    display: flex;
+    align-items: center;
 }
 
 .user-registration  {
     margin-left: 10px;
-    height: 45px;
-    width: 150px;
+
+    min-height: 45px;
+    width: 140px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.user-navigation .user-registration {
+    display: flex;
+    align-items: center;
 }
 
 .main-navigation-list {
     display: flex;
+    width: 940px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .main-navigation-list a {
-    height: 55px;
+    display: flex;
+    
+    align-items: center;
+
+    padding-right: 33px;
+    padding-left: 33px;
 }
 
-.main-navigation-list > li:first-child {
-    width: 150px;
-}
-
-.main-navigation-list > li:nth-child(2) {
-    width: 100px;
-}
-
-.main-navigation-list > li:nth-child(3) {
-    width: 140px;
-}
-
-.main-navigation-list > li:nth-child(4) {
-    width: 90px;
-}
-
-.main-navigation-list > li:nth-child(5) {
-    width: 200px;
-}
-
-.main-navigation-list > li:nth-child(6) {
-    width: 100px;
-}
-
-.main-navigation-list > li:nth-child(7) {
-    width: 160px;
+.main-navigation-list li {
+    display: flex;
+    min-height: 55px;
+    
+    
 }
 
 .product-list,
@@ -1091,13 +1148,21 @@ input[type="search"] {
 }
 
 .show-popular-producers {
-    width: 253px;
-    height: 38px;
+    width: 243px;
+    min-height: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
 
     border-radius: 3px;
-
     margin-left: 270px;
   
+}
+
+.popular-producers-top a {
+    display: flex;
+    align-items: center;
 }
 
 .popular-producers-list {
@@ -1155,12 +1220,21 @@ input[type="search"] {
 }
 
 .credit-request {
-    width: 195px;
-    height: 38px;
+    width: 185px;
+    min-height: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
 
     border-radius: 3px;
 
     margin-top: 30px;
+}
+
+.credit a {
+    display: flex;
+    align-items: center;
 }
 
 .company-wrapper {
@@ -1193,11 +1267,20 @@ input[type="search"] {
 }
 
 .more-about {
-    width: 220px;
-    height: 38px;
+    width: 210px;
+    min-height: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
 
     border-radius: 3px;
     margin-top: 42px;
+}
+
+.about-company .more-about {
+    display: flex;
+    align-items: center;
 }
 
 .partners li {
@@ -1205,10 +1288,20 @@ input[type="search"] {
 }
 
 .lost {
-    width: 300px;
-    height: 38px;
+    width: 280px;
+    min-height: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+
     border-radius: 3px;
     margin-top: 38px;
+}
+
+.on-line-middle .lost {
+    display: flex;
+    align-items: center;
 }
 
 .footer-navigation-white,
@@ -1281,5 +1374,22 @@ input[type="search"] {
 .developed {
     margin-left: 53px;
     
+}
+
+.send-letter {
+    width: 460px;
+    min-height: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    border-radius: 3px;
+    
+}
+
+.letter-popup .send-letter {
+    display: flex;
+    align-items: center;
 }
 
