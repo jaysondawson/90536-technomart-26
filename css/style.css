@@ -1029,6 +1029,28 @@ input[type="search"]::placeholder {
     align-items: center;
 }
 
+.main-navigation-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
+}
+
+.main-navigation-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 38px;
+    padding: 0 23px;
+}
+
+.main-navigation-list a {
+    padding:16px 30px 15px;
+}
+
+/*
 .main-navigation-list {
     display: flex;
     width: 940px;
@@ -1051,7 +1073,7 @@ input[type="search"]::placeholder {
     
     
 }
-
+*/
 .product-list,
 .product-list-2 {
     display: flex;
