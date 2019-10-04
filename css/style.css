@@ -444,7 +444,8 @@ input[type="search"]::placeholder {
 .popular-products-item:focus,
 .products-item:hover,
 .products-item:focus {
-   box-shadow: 0 10px 25px 0  rgb(41, 52, 73, 0.5);
+    border: 1px solid #ffffff;
+    box-shadow: 0 10px 25px 0  rgb(41, 52, 73, 0.5);
 }
 
 .old-price {
@@ -506,12 +507,12 @@ input[type="search"]::placeholder {
 
 .popular-producers-item:hover,
 .popular-producers-item:focus {
-    border: none;
+    border: 1px solid #ffffff;
     box-shadow: 0 10px 25px 0  rgb(41, 52, 73, 0.5);
 }
 
 .popular-producers-item:active {
-    border: none;
+    border: 1px solid #ffffff;
     box-shadow: 0 10px 10px 0  rgb(41, 52, 73, 0.3);  
 }
 
