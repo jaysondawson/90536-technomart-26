@@ -859,10 +859,10 @@ background-color: #ba2732;
 }
 
 /*НАЧИНАЕМ ПОСТРОЕНИЕ СЕТОК!*/
-
+/*
 * {
     outline: 1px solid red;
-}
+}*/
 
 .top-menu {
     width: 100%;
@@ -885,7 +885,7 @@ background-color: #ba2732;
     display: flex;
 
     width: 220px;
-    height: 42px;
+    min-height: 42px;
     align-items: center;
 }
 
@@ -895,7 +895,7 @@ background-color: #ba2732;
 
 input[type="search"] {
     width: 260px;
-    height: 42px;
+    min-height: 42px;
 }
 
 input[type="search"]::placeholder {
@@ -951,12 +951,12 @@ input[type="search"]::placeholder {
 
 .header {
     width: 100%;
-    height: 278px;
+    min-height: 278px;
 }
 
 .header-navigation-wrapper {
     display: flex;
-    height: 68px;
+    min-height: 68px;
     
     margin-top: 46px;
     margin-bottom: 44px;
@@ -988,7 +988,7 @@ input[type="search"]::placeholder {
     margin-left: 70px;
 
     width: 270px;
-    height: 68px;
+    min-height: 68px;
 }
 
 .user-navigation {
@@ -1149,7 +1149,7 @@ input[type="search"]::placeholder {
     display: flex;
     align-items: center;
     
-    height: 89px;
+    min-height: 89px;
     width: 940px;
 
     margin-top: 53px;
@@ -1189,7 +1189,7 @@ input[type="search"]::placeholder {
 
 .popular-products-item {
     width: 220px;
-    height: 318px;
+    min-height: 318px;
 }
 
 .popular-products-item:not(:last-child) {
@@ -1200,7 +1200,7 @@ input[type="search"]::placeholder {
     display: flex;
     align-items: center;
 
-    height: 89px;
+    min-height: 89px;
     width: 940px;
 
     margin-top: 21px;
@@ -1231,7 +1231,7 @@ input[type="search"]::placeholder {
 
 .popular-producers-item {
     width: 220px;
-    height: 145px;
+    min-height: 145px;
 }
 
 .popular-producers ul li:not(:last-child) {
@@ -1245,7 +1245,7 @@ input[type="search"]::placeholder {
 
 .services {
     width: 100%;
-    height: 522px;
+    min-height: 522px;
     
     margin-top: 85px;
 }
@@ -1263,7 +1263,7 @@ input[type="search"]::placeholder {
 
 .services-navigation p {
     width: 240px;
-    height: 62px;
+    min-height: 62px;
 
     border-top: 1px solid #41516a;
     border-bottom: 1px solid #2b364a;
@@ -1299,17 +1299,17 @@ input[type="search"]::placeholder {
 
 .company-wrapper {
     display: flex;
-    height: 537px;
+    min-height: 537px;
 }
 
 .about-company {
     width: 540px;
-    height: 450px;
+    min-height: 450px;
 
 }
 
 .on-line-top {
-    height: 113px;
+    min-height: 113px;
 
     margin-top: 75px;
 }
@@ -1375,7 +1375,7 @@ input[type="search"]::placeholder {
 }
 
 .footer-wrapper .container {
-    height: 193px;
+    min-height: 193px;
 }
 
 .index-logo {
@@ -1383,7 +1383,7 @@ input[type="search"]::placeholder {
     align-items: center;
 
     width: 220px;
-    height: 63px;
+    min-height: 63px;
 
     margin-bottom: 25px;
 }
@@ -1416,7 +1416,7 @@ input[type="search"]::placeholder {
 
 .footer-bottom .container {
     align-items: center;
-    height: 107px;
+    min-height: 107px;
 }
 
 
