@@ -1045,13 +1045,22 @@ input[type="search"] {
 }
 
 .show-popular-products {
-    width: 253px;
-    height: 38px;
-
+    width: 243px;
+    min-height: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+            
     border-radius: 3px;
-
     margin-left: 373px;
 }
+
+.popular-products-top a {
+    display: flex;
+    align-items: center;
+}
+
 
 .popular-products-list {
     display: flex;
