@@ -107,7 +107,8 @@ body {
 .filter-producers,
 .filter-power,
 .about-product p,
-.pages{
+.pages,
+.basket-buttons {
     margin: 0;
     padding: 0;
 }
@@ -732,6 +733,7 @@ textarea::placeholder {
 .basket-buttons a:focus {
 background-color: #ca2c37;
 }
+
 
 .send-letter:active,
 .basket-buttons a:active {
@@ -1831,6 +1833,57 @@ input[type="search"]::placeholder {
     margin-bottom: 41px;
 }
 
+.basket-popup {
+    width: 620px;
+    min-height: 282px;
+}
+
+.basket-header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 163px;
+    
+}
+
+.basket-buttons-wrapper {
+    background-color: #f1f1f1;
+    min-height: 112px;
+}
+
+.basket-buttons {
+    display: flex;
+}
+
+.basket-buttons a:first-child {
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+
+.basket-buttons-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.basket-popup a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    min-height: 38px;
+    border-radius: 3px;
+}
+
+.basket-buttons .continue-purchase {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.basket-buttons .continue-purchase:hover,
+.basket-buttons .continue-purchase:focus {
+    background-color: rgb(0, 0, 0, 0.1)
+}
 /*
 * {
     outline: 1px solid red;
