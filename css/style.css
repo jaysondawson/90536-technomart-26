@@ -118,6 +118,7 @@ a {
 }
 
 .top-logo,
+.logo,
 .index-top-logo,
 .index-logo {
     background-color: #ee3643;
@@ -125,12 +126,15 @@ a {
 }
 
 .top-logo:hover,
-.top-logo:focus {
+.top-logo:focus,
+.logo:hover,
+.logo:focus {
     background-color: #ca2c37; 
     box-shadow: 0 5px 0 0 #9a212a; 
 }
 
-.top-logo:active {
+.top-logo:active,
+.logo:active {
     background-color: #ba2732;
     box-shadow: 0 5px 0 0 #8e1e26; 
 }
@@ -1523,7 +1527,8 @@ input[type="search"]::placeholder {
     min-height: 193px;
 }
 
-.index-logo {
+.index-logo,
+.logo {
     display: flex;
     align-items: center;
 
@@ -1533,7 +1538,8 @@ input[type="search"]::placeholder {
     margin-bottom: 25px;
 }
 
-.index-logo img {
+.index-logo img,
+.logo img {
     margin: 0 auto;
 }
 
