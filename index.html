@@ -418,38 +418,49 @@
       </div>
     </footer>
 
-     <!--МОДАЛЬНОЕ ОКНО "КАРТА"-->
-    <section class="map-popup" >
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <p>
-        <img src="img/map_full.jpg" width="940" height="446" alt="Офис компании «Техномарт» 
-        находится по адресу ул.Б.Конюшенная, д.19-8, город Санкт-Петербург">
-      </p>
-    </section>
-
-
-    <!--МОДАЛЬНОЕ ОКНО "НАПИШИТЕ НАМ"-->
-
-    <section class="letter-popup">
-      <h2 class="visually-hidden">Написать нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-        <p class="letter-popup-name">
-          <label for="letter-name">Ваше имя:</label>
-          <input class="name-popup" type="text" id="letter-name" placeholder="Имя Фамилия">
-        </p>
+    <div class="container">
+       <!--МОДАЛЬНОЕ ОКНО "КАРТА"-->
+      <section class="map-popup" >
+        <h2 class="visually-hidden">Как нас найти</h2>
         <p>
-        <label for="letter-email">Ваш e-mail:</label>
-        <input class="email-popup" type="text" id="letter-email" placeholder="email@example.com">
+          <img src="img/map_full.jpg" width="940" height="446" alt="Офис компании «Техномарт» 
+          находится по адресу ул.Б.Конюшенная, д.19-8, город Санкт-Петербург">
         </p>
-        <p>
-          <label for="letter-text">Текст письма:</label>
-          <textarea name="" id="letter-text" cols="50" rows="10" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="send-letter" type="submit" name="">Отправить</button>
-      </form>
-      <button type="button" name="">Закрыть</button>
-    </section>
+      </section>
+    </div>
     
+    <div class="container">
+      <!--МОДАЛЬНОЕ ОКНО "НАПИШИТЕ НАМ"-->
+      <div class="letter-popup-centerer">
+        <section class="letter-popup">
+          <h2 class="visually-hidden">Написать нам</h2>
+          <div class="letter-popup-wrapper">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <div class="letter-popup-top">
+                <div class="letter-popup-name-wrapper">
+                  <p class="letter-popup-name">
+                    <label for="letter-name">Ваше имя:</label>
+                    <input class="name-popup" type="text" id="letter-name" placeholder="Имя Фамилия">
+                  </p>
+                  <p class="letter-popup-email">
+                    <label for="letter-email">Ваш e-mail:</label>
+                    <input class="email-popup" type="text" id="letter-email" placeholder="email@example.com">
+                  </p>
+                </div>
+              </div>
+              <p class="letter-popup-write">
+                <label for="letter-text">Текст письма:</label>
+                <textarea class="letter-textarea" id="letter-text" cols="63.5" rows="10" placeholder="В свободной форме"></textarea>
+              </p>
+              <button class="send-letter" type="submit" name="">Отправить</button>
+            </form>
+          </div>
+            
+          <button class="close-letter-popup" type="button" name="">Закрыть</button>
+        </section>
+      </div>
+      
+    </div>
   </body>
 </html>
 
