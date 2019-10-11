@@ -17,17 +17,17 @@
       <div class="top-menu">
         <div class="container">
           <a class="index-top-logo"><img src="img/svg-technomart/logo-technomart.svg" width="107" height="18" alt="Техномарт"></a>
-          <ul class="top-menu-list">
+          <div class="top-menu-list">
           
             <!--ФОРМА ПОИСКА-->
 
           <form class="search" action="https://echo.htmlacademy.ru" method="GET">
             <input type="search" placeholder="Поиск:">
           </form>
-          <li><a class="bookmarks" href="#">Закладки: 0</a></li>
-          <li><a class="basket" href="#">Корзина: 0</a></li>
-          <li class="purchase-item"><a class="process" href="#">Оформить заказ</a> </li>
-        </ul>
+          <div><a class="bookmarks" href="#">Закладки: 0</a></div>
+          <div><a class="basket" href="#">Корзина: 0</a></div>
+          <div class="purchase-item"><a class="process" href="#">Оформить заказ</a></div>
+        </div>
         </div>
         
       </div>
@@ -90,8 +90,8 @@
               <a href="#">Для стройки</a>
             </li>
           </ul>
-          <ul class="product-list-2">
-            <li>
+          <div class="product-list-2">
+            <div>
               <div class="slider-1">
                 <h3 class="visually-hidden">Перфораторы</h3>
                 <p class="visually-hidden">Настоящие мужские игрушки</p>
@@ -104,18 +104,18 @@
                 <img src="img/slider-2.jpg" alt="Слайдер 1">
                 <a href="catalog.html">Открыть каталог</a>
               </div>
-            </li>
+            </div>
             <div class="vertical-flex">
-              <li class="product-green">
+              <div class="product-green">
                 <h3>Скидки 50%</h3>
                 <a href="#">На 350 товаров</a>
-              </li>
-              <li class="product-orange-2">
+              </div>
+              <div class="product-orange-2">
                 <h3>Доставка</h3>
                 <a href="#">Бесплатно</a>
-              </li>
+              </div>
             </div>
-          </ul>
+          </div>
         </section>
       </div>  
       
@@ -145,10 +145,10 @@
             </li>
       
                 <!--КАРТОЧКА ТОВАРА 1//ССЫЛКА-->
-            <div class="active-product-item visually-hidden">
+            <li class="active-product-item visually-hidden">
               <a class="buy" href="#">Купить</a>
               <a class="add-bookmarks" href="#">В закладки</a>
-            </div>
+            </li>
                 
       
                 <!--КАРТОЧКА ТОВАРА 2-->
@@ -168,10 +168,10 @@
       
                 <!--КАРТОЧКА ТОВАРА 2//ССЫЛКА-->
       
-            <div class="active-product-item visually-hidden">
+            <li class="active-product-item visually-hidden">
               <a class="buy" href="#">Купить</a>
               <a class="add-bookmarks" href="#">В закладки</a>
-            </div>
+            </li>
       
                 <!--КАРТОЧКА ТОВАРА 3-->
               
@@ -190,10 +190,10 @@
                 
                 <!--КАРТОЧКА ТОВАРА 3//ССЫЛКА-->
       
-            <div class="active-product-item visually-hidden">
+            <li class="active-product-item visually-hidden">
               <a class="buy" href="#">Купить</a>
               <a class="add-bookmarks" href="#">В закладки</a>
-            </div>
+            </li>
       
                 <!--КАРТОЧКА ТОВАРА 4-->
                 
@@ -212,10 +212,10 @@
       
                 <!--КАРТОЧКА ТОВАРА 4//ССЫЛКА-->
       
-            <div class="active-product-item visually-hidden">
+            <li class="active-product-item visually-hidden">
               <a class="buy" href="#">Купить</a>
               <a class="add-bookmarks" href="#">В закладки</a>
-            </div>
+            </li>
             </ul>   
           </section>
       </div>
@@ -367,12 +367,13 @@
 
     <footer class="footer-wrapper">
       <div class="container">
-        <section class="footer-top">
+        <div class="footer-top">
+          
           <p><a class="index-logo" ><img src="img/svg-technomart/logo-technomart.svg" width="136" height="21"
             alt="Техномарт"></a></p>
           <address>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</address>
           <a class="phone-number-footer" href="tel:+78125550555">+7(812)555-05-55</a>
-        </section>
+          </div>
         <nav class="footer-navigation">
           <ul class="footer-navigation-white top">
             <li><a href="#">Компания</a></li>
@@ -455,9 +456,9 @@
             </form>
           </div>
           <div class="letter-popup-bottom">
-            <button class="send-letter" type="submit" name="">Отправить</button>
+            <button class="send-letter" type="submit">Отправить</button>
           </div>
-          <button class="close-letter-popup" type="button" name="">Закрыть</button>
+          <button class="close-letter-popup" type="button">Закрыть</button>
         </section>
       </div>
       
