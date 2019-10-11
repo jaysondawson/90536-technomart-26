@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic%7Сhttps://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%1FPT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -18,17 +18,17 @@
       <div class="top-menu">
         <div class="container">
           <a class="top-logo" href="index.html"><img src="img/svg-technomart/logo-technomart.svg" width="107" height="18" alt="Техномарт"></a>
-          <ul class="top-menu-list">
+          <div class="top-menu-list">
           
             <!--ФОРМА ПОИСКА-->
 
             <form class="search" action="https://echo.htmlacademy.ru" method="GET">
               <input type="search" placeholder="Поиск:">
             </form>
-            <li><a class="bookmarks" href="#">Закладки: 0</a></li>
-            <li><a class="basket" href="#">Корзина: 0</a></li>
-            <li class="purchase-item"><a class="process" href="#">Оформить заказ</a> </li>
-          </ul>
+            <div><a class="bookmarks" href="#">Закладки: 0</a></div>
+            <div><a class="basket" href="#">Корзина: 0</a></div>
+            <div class="purchase-item"><a class="process" href="#">Оформить заказ</a></div>
+          </div>
         </div>
       </div>
 
@@ -42,11 +42,12 @@
                   <address>г.Санкт-Петербург, ул.Б.Конюшенная, д.19-8</address>
               </div>
               <ul class="login-navigation">
-                <li><a class="login-name">Равшан Джамшутович</a></li>
-                <ul class="login-navigation-items">
-                  <li><a class="login-item" href="#">Мои заказы</a></li>
-                  <li><a class="login-item" href="#">Личный кабинет</a></li> 
-                </ul>
+                <li><a class="login-name">Равшан Джамшутович</a>
+                  <ul class="login-navigation-items">
+                    <li><a class="login-item" href="#">Мои заказы</a></li>
+                    <li><a class="login-item" href="#">Личный кабинет</a></li> 
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -214,10 +215,10 @@
         
                   <!--КАРТОЧКА ТОВАРА 1//ССЫЛКА-->
         
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
         
                   <!--КАРТОЧКА ТОВАРА 2-->
                 
@@ -236,10 +237,10 @@
                   
                   <!--КАРТОЧКА ТОВАРА 2//ССЫЛКА-->
         
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
         
                   <!--КАРТОЧКА ТОВАРА 3-->
                   
@@ -258,10 +259,10 @@
         
                   <!--КАРТОЧКА ТОВАРА 3//ССЫЛКА-->
         
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
             </ul>
             
             <ul class="products-list">
@@ -283,10 +284,10 @@
 
               <!--КАРТОЧКА ТОВАРА 4//ССЫЛКА-->
 
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
 
               <!--КАРТОЧКА ТОВАРА 5-->
 
@@ -305,10 +306,10 @@
 
               <!--КАРТОЧКА ТОВАРА 5//ССЫЛКА-->
 
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
 
               <!--КАРТОЧКА ТОВАРА 6-->
 
@@ -327,10 +328,10 @@
 
               <!--КАРТОЧКА ТОВАРА 6//ССЫЛКА-->
 
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
             </ul>
 
             <ul class="products-list">
@@ -352,10 +353,10 @@
 
               <!--КАРТОЧКА ТОВАРА 7//ССЫЛКА-->
 
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
 
               <!--КАРТОЧКА ТОВАРА 8-->
 
@@ -374,10 +375,10 @@
 
               <!--КАРТОЧКА ТОВАРА 8//ССЫЛКА-->
 
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
 
               <!--КАРТОЧКА ТОВАРА 9-->
 
@@ -396,10 +397,10 @@
 
               <!--КАРТОЧКА ТОВАРА 9//ССЫЛКА-->
 
-              <div class="active-product-item visually-hidden">
+              <li class="active-product-item visually-hidden">
                 <a class="buy" href="#">Купить</a>
                 <a class="add-bookmarks" href="#">В закладки</a>
-              </div>
+              </li>
             </ul>
           </section>
       
@@ -433,12 +434,12 @@
 
     <footer class="footer-wrapper">
       <div class="container">
-        <section class="footer-top">
+        <div class="footer-top">
           <p><a class="logo" href="index.html"><img src="img/svg-technomart/logo-technomart.svg" width="136" height="21"
             alt="Техномарт"></a></p>
           <address>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</address>
           <a class="phone-number-footer" href="tel:+78125550555">+7(812)555-05-55</a>
-        </section>
+          </div>
         <nav class="footer-navigation">
           <ul class="footer-navigation-white top">
             <li><a href="#">Компания</a></li>
@@ -495,7 +496,7 @@
           <a class="continue-purchase" href="catalog.html">Продолжить покупки</a>
         </p>
       </div>
-      <button type="button" name="">Закрыть</button>
+      <button type="button">Закрыть</button>
     </section>
   </body>
 </html>
