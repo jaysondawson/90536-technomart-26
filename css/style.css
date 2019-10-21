@@ -175,15 +175,18 @@ a {
 .top-menu-list a:focus {
     background-color: #212a3a;
 }
-
+/*
+.search:focus .search-svg, 
 .search:active .search-svg {
-    fill: #ee3643;
+    
 }
-
-.search input[type="search"]:focus {
+*/
+.search input[type="search"]:focus,
+.search input:focus + svg>path {
     background-color: #ffffff;
-    outline: none;
     color: #000000;
+    fill: #ee3643;
+    opacity: 1;
 }
 
 /*Убираем крестик*/
@@ -618,11 +621,52 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .partners {
+position: relative;
+
     font-size: 18px;
     line-height: 20px;
     font-weight: normal;
 
     color: #000000;
+}
+
+.partners li:first-child::before{
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #ee3643;
+}
+
+.partners li:nth-child(2)::before{
+    content: "";
+
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #ee3643;
+}
+
+.partners li:last-child::before{
+    content: "";
+
+    position: absolute;
+    top: 82px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #ee3643;
 }
 
 .footer-top {
@@ -730,7 +774,10 @@ textarea {
 
 .email-popup,
 .name-popup {
+    margin-top: 2px;
     border: 2px solid #dee3e4;
+
+    padding-left: 15px;
 }
 
 .email-popup::placeholder,
@@ -738,6 +785,7 @@ textarea {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
+
 
     color: #a9a9a9;
 }
@@ -1993,12 +2041,8 @@ input[type="search"]::placeholder {
 
 
 .letter-popup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     width: 620px;
-    min-height: 430px;
+    min-height: 423px;
 }
 
 .letter-popup-wrapper {
@@ -2013,14 +2057,14 @@ input[type="search"]::placeholder {
 
 .letter-popup-name input,
 .letter-popup-email input {
-    width: 216px;
+    width: 201px;
     min-height: 38px;
     border-radius: 3px;
     margin-top: 7px;
 }
 
 .letter-popup-name {
-    margin-top: 26px;
+    margin-top: 40px;
 }
 
 .letter-popup-name label {
@@ -2028,7 +2072,7 @@ input[type="search"]::placeholder {
 }
 
 .letter-popup-email {
-    margin-top: 26px;
+    margin-top: 40px;
     margin-left: 20px;
     
 }
@@ -2037,13 +2081,19 @@ input[type="search"]::placeholder {
     margin-bottom: 7px; 
 }
 
-.letter-textarea {
-    width: 456px;
-    min-height: 110px;
+.letter-popup-write {
+    margin-top: 3px;
+}
 
+.letter-textarea {
+    width: 441px;
+    min-height: 98px;
+    
     border-radius: 3px;
 
-    margin-top: 7px;
+    margin-top: 9px;
+    padding-top: 12px;
+    padding-left: 15px;
 
     
 }
@@ -2054,7 +2104,7 @@ input[type="search"]::placeholder {
     align-items: center;
 
     margin-top: 37px;
-
+    
     width: 100%;
     min-height: 112px;
 
