@@ -13,17 +13,6 @@ body {
 }
 
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .top-menu ul,
 .main-navigation ul,
 .header-navigation ul,
@@ -1707,6 +1696,10 @@ input[type="search"]::placeholder {
 .active-product-item .add-bookmarks {
     width: 135px;
     min-height: 35px;
+
+    border-radius: 3px;
+
+
 }
 
 .popular-producers-top {
@@ -2541,6 +2534,17 @@ input[type="search"]::placeholder {
 .map-popup {
     width: 940px;
     height: 446px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*
