@@ -485,7 +485,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 18px;
     font-weight: bold;
     line-height: 20px;
-
+    
     color: #000000;
 }
 
@@ -1589,21 +1589,27 @@ input[type="search"]::placeholder {
     align-items: center;
 }
 
-
-.popular-products-list {
-    display: flex;
+.popular-producers-list {
+    margin: 0 auto;
 }
 
-.container .popular-producers-list:last-child {
-    margin-top: 17.5px;
+.popular-products-list .row {
+    margin-left: -20px;
 }
 
 .popular-products-item {
     position: relative;
-    width: 220px;
+
+    display: inline-block;
+    width: 218px;
     min-height: 318px;
-    
-    
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.popular-products-item:nth-child(4n){
+    margin-right: 0px;
 }
 
 .popular-products-item a {
@@ -1616,8 +1622,12 @@ input[type="search"]::placeholder {
     align-items: center;
 }
 
-.popular-products-item h3 {
+.popular-products-item img {
     order: 1;
+}
+
+.popular-products-item h3 {
+    order: 2;
 
     display: flex;
     justify-content: center;
@@ -1626,11 +1636,7 @@ input[type="search"]::placeholder {
 }
 
 .popular-products-item .product-price {
-    order: 2;
-}
-
-.popular-products-item:not(:last-child) {
-    margin-right: 17.5px;
+    order: 3;
 }
 
 .old-price {
@@ -1686,7 +1692,7 @@ input[type="search"]::placeholder {
     top: 0;
     left: 0;
 
-    width: 220px;
+    width: 218px;
     height: 84px;
     padding: 44px 0;
 
@@ -1731,6 +1737,8 @@ input[type="search"]::placeholder {
 .active-product-item .add-bookmarks {
     margin-top: 7px;
 }
+
+
 
 .popular-producers-top {
     display: flex;
