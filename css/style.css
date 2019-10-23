@@ -1680,26 +1680,56 @@ input[type="search"]::placeholder {
 }
 
 .active-product-item {
+    display: none;
+
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 218px;
-    height: 88px;
-    padding: 40px 0;
+    width: 220px;
+    height: 84px;
+    padding: 44px 0;
 
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,1);
     z-index: 10;
 }
 
-.active-product-item .buy,
-.active-product-item .add-bookmarks {
-    width: 135px;
-    min-height: 35px;
+ .popular-products-item:hover .active-product-item {
+    display: block;
+}
 
+.active-product-item a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: normal;
+
+    margin: 0 auto;
     border-radius: 3px;
+}
 
+.active-product-item .buy {
+    width: 130px;
+    min-height: 15px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
+.active-product-item .add-bookmarks {
+    width: 124px;
+    min-height: 16px;
+
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background-color: white;
+}
+
+.active-product-item .add-bookmarks {
+    margin-top: 7px;
 }
 
 .popular-producers-top {
