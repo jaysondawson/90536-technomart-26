@@ -693,6 +693,15 @@ position: relative;
     color: #ffffff;
 }
 
+.footer-top address {
+    margin-top: 32px;
+    margin-left: 4px;
+}
+
+.footer-top .phone-number-footer {
+    margin-left: 4px;
+}
+
 .footer-navigation-white a {
     font-size: 18px;
     line-height: 24px;
@@ -1908,9 +1917,9 @@ input[type="search"]::placeholder {
 .credit p {
     margin-top: 30px;
 }
+
 .delivery,
-.credit
-/*.guarantee*/ {
+.guarantee {
     display: none;
 }
 
@@ -2048,7 +2057,7 @@ input[type="search"]::placeholder {
     padding-left: 5px;
 
     border-radius: 3px;
-    margin-top: 38px;
+    margin-top: 37px;
 }
 
 .on-line-middle p {
@@ -2063,12 +2072,12 @@ input[type="search"]::placeholder {
     text-align: center;
 
     padding-right: 5px;
-    padding-left: 8px;
+    padding-left: 10px;
     padding-top: 6px;
     padding-bottom: 5px;
 
-    width: 287px;
-    min-height: 26px;
+    width: 285px;
+    min-height: 27px;
 }
 
 .on-line-middle img {
@@ -2106,25 +2115,53 @@ input[type="search"]::placeholder {
 }
 
 .footer-top address {
-    width: 321px;
+    width: 324px;
 }
 
 .footer-navigation-white.top {
-    margin-left: 68px;
-    margin-top: 35px;
+    margin-left: 65px;
+    margin-top: 37px;
 }
 
 .footer-navigation-white li:not(:last-child) {
     margin-right: 60px;
 }
 
+.footer-news {
+    margin-left: -2px;
+}
+
+.footer-catalog {
+    margin-left: -1px;
+}
+
+.footer-delivery {
+    margin-left: 1px;
+}
+
+.footer-contacts {
+    margin-left: -2px;
+}
+
 .footer-navigation-yellow.bottom {
-    margin-left: 92px;
-    margin-top: 33px;
+    font-size: 18px;
+    line-height: 24px;
+
+    margin-left: 88px;
+    margin-top: 34px;
 }
 
 .footer-navigation-yellow li:not(:last-child) {
     margin-right: 61px;
+}
+
+.footer-tech {
+    margin-left: -1px;
+}
+
+.footer-tool,
+.footer-offers {
+    margin-left: -2px;
 }
 
 .footer-bottom .container {
@@ -2174,7 +2211,11 @@ input[type="search"]::placeholder {
 }
 
 .developed {
-    margin-left: 53px;
+    margin-left: 38px;
+}
+
+.developed p {
+    margin-right: 13px;
 }
 
 .developed span:active,
@@ -2208,11 +2249,11 @@ input[type="search"]::placeholder {
     width: 201px;
     min-height: 38px;
     border-radius: 3px;
-    margin-top: 7px;
+    margin-top: 5px;
 }
 
 .letter-popup-name {
-    margin-top: 40px;
+    margin-top: 46px;
 }
 
 .letter-popup-name label {
@@ -2220,7 +2261,7 @@ input[type="search"]::placeholder {
 }
 
 .letter-popup-email {
-    margin-top: 40px;
+    margin-top: 46px;
     margin-left: 20px;
     
 }
@@ -2787,7 +2828,7 @@ input[type="search"]::placeholder {
     display: none;
 }
 
-/*
+
 * {
     outline: 1px solid red;
 }
