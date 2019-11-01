@@ -451,9 +451,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .popular-products h2,
 .popular-producers h2,
-.delivery h3,
-.guarantee h3,
-.credit h3,
 .about-company h2 {
     font-size: 30px;
     font-weight: normal;
@@ -461,6 +458,27 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 30px;
 
     color: #32425c;
+}
+
+.delivery h3,
+.guarantee h3,
+.credit h3 {
+    font-size: 36px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    color: #32425c;
+}
+
+.credit h3,
+.delivery h3,
+.guarantee h3 {
+    margin-top: 4px;
+}
+
+.delivery h3 {
+    margin-top: 4px;
 }
 
 .services h2,
@@ -584,6 +602,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .services-navigation a {
+    font-weight: bold;
     font-size: 21px;
     line-height: 30px;
 
@@ -638,7 +657,7 @@ position: relative;
     content: "";
 
     position: absolute;
-    top: 45px;
+    top: 48px;
     left: 0;
 
     width: 25px;
@@ -651,7 +670,7 @@ position: relative;
     content: "";
 
     position: absolute;
-    top: 82px;
+    top: 88px;
     left: 0;
 
     width: 25px;
@@ -1791,6 +1810,7 @@ input[type="search"]::placeholder {
     width: 243px;
     min-height: 38px;
     justify-content: center;
+    
     flex-wrap: wrap;
     padding-right: 5px;
     padding-left: 5px;
@@ -1812,7 +1832,7 @@ input[type="search"]::placeholder {
 
 .popular-producers-item {
     width: 218px;
-    min-height: 145px;
+    min-height: 143px;
 
     margin-right: 20px;
     margin-bottom: 20px;
@@ -1837,6 +1857,8 @@ input[type="search"]::placeholder {
 }
 
 .services-wrapper p {
+    margin-top: 26px;
+
     width: 400px;
 }
 
@@ -1844,7 +1866,7 @@ input[type="search"]::placeholder {
     width: 100%;
     min-height: 522px;
     
-    margin-top: 85px;
+    margin-top: 65px;
 }
 
 .services h2 {
@@ -1855,21 +1877,27 @@ input[type="search"]::placeholder {
 .services-navigation-wrapper {
     display: flex;
     
-
-    margin-top: 70px;
+    margin-top: 69px;
 }
 
 .services-navigation a {
     width: 218px;
-    min-height: 62px;
+    min-height: 34px;
 
     display: flex;
-    align-items: center;
+    
     padding-left: 22px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 
     border-top: 1px solid #41516a;
     border-bottom: 1px solid #2b364a;
 }
+
+.services-navigation::after {
+
+}
+
 
 .service-description li {
     margin-left: 80px;
@@ -1880,9 +1908,9 @@ input[type="search"]::placeholder {
 .credit p {
     margin-top: 30px;
 }
-
 .delivery,
-.guarantee {
+.credit
+/*.guarantee*/ {
     display: none;
 }
 
@@ -1904,7 +1932,7 @@ input[type="search"]::placeholder {
 
     border-radius: 3px;
 
-    margin-top: 30px;
+    margin-top: 27px;
 }
 
 .services .container {
@@ -1919,22 +1947,22 @@ input[type="search"]::placeholder {
 .delivery img {
     position: absolute;
 
-    bottom: -117px;
-    right: 0px;
+    bottom: -98px;
+    right: 1px;
 }
 
 .guarantee img {
     position: absolute;
 
-    bottom: -117px;
-    right: 0px;
+    bottom: -98px;
+    right: -8px;
 }
 
 .credit img {
     position: absolute;
 
-    bottom: -117px;
-    right: 0px;
+    bottom: -98px;
+    right: -10px;
 }
 
 .company-wrapper {
@@ -1950,14 +1978,14 @@ input[type="search"]::placeholder {
 
 .on-line-top {
     min-height: 113px;
-    margin-top: 75px;
+    margin-top: 79px;
 
     
 }
 
 .about-company .info {
     margin-top: 25px;
-    width: 390px;
+    
 }
 
 .contacts .info {
@@ -1971,14 +1999,17 @@ input[type="search"]::placeholder {
 
 .more-about {
     width: 210px;
-    min-height: 38px;
+    min-height: 27px;
     justify-content: center;
     flex-wrap: wrap;
     padding-right: 5px;
     padding-left: 5px;
 
+    padding-top: 6px;
+    padding-bottom: 5px;
+
     border-radius: 3px;
-    margin-top: 42px;
+    margin-top: 36px;
 }
 
 .about-company .more-about {
@@ -1987,8 +2018,16 @@ input[type="search"]::placeholder {
 }
 
 .partners li {
-    margin-top: 17px;
     margin-left: 36px;
+}
+
+.partners li:first-child {
+    margin-top: 21px; 
+}
+
+.partners li:nth-child(2),
+.partners li:nth-child(3) {
+    margin-top: 20px; 
 }
 
 .partners li::before {
@@ -2012,9 +2051,28 @@ input[type="search"]::placeholder {
     margin-top: 38px;
 }
 
+.on-line-middle p {
+    margin-top: 15px;
+
+    width: 390px;
+}
+
 .on-line-middle .lost {
     display: flex;
     align-items: center;
+    text-align: center;
+
+    padding-right: 5px;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+
+    width: 287px;
+    min-height: 26px;
+}
+
+.on-line-middle img {
+    margin-top: 22px;
 }
 
 .footer-navigation-white,
