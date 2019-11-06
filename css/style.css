@@ -2322,16 +2322,40 @@ background-color: #ba2732;
     margin-top: 30px;
 }
 
-.services {
+.position-wrapper{
+    position: relative;
+}
+
+.services.delivery-service {
+    position: absolute;
+
+    display: none;
+    
+    background-image: url(../img/delivery.png);
+    background-position: 67% 100%;
+    background-repeat: no-repeat;
+}
+
+.services.guarantee-service {
+    position: absolute;
+
+    display: none;
+
+    background-image: url(../img/guarantee.png);
+    background-position: 67% 100%;
+    background-repeat: no-repeat;
+}
+
+.services.credit-service {
+    position: absolute;
+
+    
+
     background-image: url(../img/credit.png);
     background-position: 67% 100%;
     background-repeat: no-repeat;
 }
 
-.delivery,
-.guarantee {
-    display: none;
-}
 
 .delivery p {
     width: 275px; 
@@ -2394,6 +2418,9 @@ background-color: #ba2732;
 .company-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
+    
+    margin-top: 587px;
+
     display: flex;
     min-height: 537px;
 }
