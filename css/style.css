@@ -1891,28 +1891,40 @@ background-color: #ba2732;
 .slider-point {
     position: absolute;
 
-    width: 6px;
-    height: 6px;
-
-    border: 2px solid #ffffff;
     border-radius: 50%;
 }
 
-.slider-point.point-1 {
-    background-color: #ee3643;
-    border-radius: 50%;
+
+.point-1:checked + label::before {
+    content: "";
+  
+    position: absolute;
 
     bottom: 39px;
     left: 295px;
+
+    width: 6px;
+    height: 6px;
+    
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+    background-color: #ee3643;
 }
 
-.slider-point.point-2 {
-    display: none;
-    background-color: #ee3643;
-    border-radius: 50%;
+.point-2 + label::before {
+    content: "";
+  
+    position: absolute;
 
     bottom: 39px;
     left: 315px;
+
+    width: 6px;
+    height: 6px;
+    
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+    background-color: #e5e5e5;
 }
 
 
