@@ -2322,6 +2322,12 @@ background-color: #ba2732;
     margin-top: 30px;
 }
 
+.services {
+    background-image: url(../img/credit.png);
+    background-position: 67% 100%;
+    background-repeat: no-repeat;
+}
+
 .delivery,
 .guarantee {
     display: none;
